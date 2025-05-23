@@ -18,13 +18,29 @@
 /* 修复移动端页脚 */
 @media (max-width: 640px) {
   .footer-container {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 1rem;
+    align-items: flex-start !important;
   }
   .footer-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .footer-icon {
+    display: flex !important;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0 !important;
+  }
+  
+  .footer-icon i {
+    min-width: 24px;
+  }
+  
+  .space-x-12 > * + * {
+    margin-left: 0 !important;
   }
   
   /* 固定标题大小 */
@@ -35,7 +51,7 @@
   
   /* 移动端Banner高度 */
   .banner-section {
-    height: 220px !important;
+    height: 300px !important;
   }
   
   /* 移动端段落间距 */
@@ -63,15 +79,47 @@
   height: auto;
 }
 
-/* 更好的移动端导航 */
+/* 移动导航下拉菜单样式优化 */
 #mobileProductDropdown {
   max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
 }
 
-#mobileProductDropdown.show {
-  max-height: 200px;
+#mobileProductDropdown:not(.hidden) {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* 确保移动导航dropdown可点击 */
+.mobile-dropdown {
+  position: relative;
+  z-index: 60;
+}
+
+.mobile-dropdown a {
+  display: block !important;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  font-size: 1.125rem;
+  pointer-events: auto !important;
+}
+
+/* 增加子菜单链接的可见性和点击区域 */
+#mobileProductDropdown a {
+  position: relative;
+  z-index: 70;
+  cursor: pointer;
+  padding: 12px 16px !important;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#mobileProductDropdown a:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* 栅格布局优化 */
@@ -91,13 +139,16 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .footer-icon i {
   width: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 0.5rem;
 }
 
 /* 优化页脚间距 */
@@ -111,5 +162,11 @@
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+  }
+  
+  /* 确保小屏幕上的子导航可见 */
+  .mobile-menu .mobile-dropdown a {
+    padding: 10px 0;
+    opacity: 1;
   }
 } 

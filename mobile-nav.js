@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 移动菜单切换
   if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener('click', function() {
+    mobileMenuButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
       if (mobileMenu.classList.contains('hidden')) {
         mobileMenu.classList.remove('hidden');
         mobileMenu.classList.add('flex');
@@ -23,6 +25,22 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.add('hidden');
         mobileMenu.classList.remove('flex');
         mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
+        
+        // 关闭所有子菜单
+        const allMobileDropdowns = document.querySelectorAll('.mobile-dropdown');
+        allMobileDropdowns.forEach(dropdown => {
+          dropdown.classList.add('hidden');
+        });
+        
+        // 重置所有图标
+        const allDropdownBtns = document.querySelectorAll('.mobile-menu button');
+        allDropdownBtns.forEach(btn => {
+          const icon = btn.querySelector('i');
+          if (icon && icon.classList.contains('ri-arrow-up-s-line')) {
+            icon.classList.remove('ri-arrow-up-s-line');
+            icon.classList.add('ri-arrow-down-s-line');
+          }
+        });
       }
     });
   }
@@ -45,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 打开当前下拉菜单
         mobileProductDropdown.classList.remove('hidden');
-        mobileProductDropdown.classList.add('block');
         
         // 更改图标
         const icon = mobileProductDropdownBtn.querySelector('i');
@@ -53,9 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
           icon.classList.remove('ri-arrow-down-s-line');
           icon.classList.add('ri-arrow-up-s-line');
         }
+        
+        // 确保子菜单链接可点击
+        const mobileDropdownLinks = mobileProductDropdown.querySelectorAll('a');
+        mobileDropdownLinks.forEach(link => {
+          link.addEventListener('click', function(event) {
+            event.stopPropagation();
+            window.location.href = this.getAttribute('href');
+          });
+        });
       } else {
         mobileProductDropdown.classList.add('hidden');
-        mobileProductDropdown.classList.remove('block');
         
         // 更改图标
         const icon = mobileProductDropdownBtn.querySelector('i');
@@ -67,9 +92,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 确保点击下拉菜单内容不会关闭菜单
-    mobileProductDropdown.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
+    if (mobileProductDropdown) {
+      mobileProductDropdown.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+      
+      // 确保子菜单链接可点击
+      const mobileDropdownLinks = mobileProductDropdown.querySelectorAll('a');
+      mobileDropdownLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.stopPropagation();
+          window.location.href = this.getAttribute('href');
+        });
+      });
+    }
   }
   
   // 桌面端下拉菜单
