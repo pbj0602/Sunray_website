@@ -84,4 +84,32 @@
 /* 调整移动端顶部间距，避免导航栏遮挡内容 */
 .mobile-pt {
   padding-top: 6rem;
+}
+
+/* 修复页脚图标对齐问题 */
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-icon i {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 优化页脚间距 */
+.footer-container {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
 } 

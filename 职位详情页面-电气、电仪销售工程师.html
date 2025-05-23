@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>职位详情 - 电气、电仪销售工程师</title>
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="mobile-fix.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
@@ -46,9 +47,18 @@ width: 100%;
 .nav-link.active {
 font-weight: 600;
 }
+@media (max-width: 640px) {
+  .job-section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .job-content {
+    padding: 1.5rem !important;
+  }
+}
 </style>
 </head>
-<body class="bg-gray-50">
+<body class="min-h-screen bg-gray-50">
 <!-- 顶部导航栏 -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
 <div class="container mx-auto px-6 py-6 flex justify-between items-center">
@@ -72,19 +82,29 @@ font-weight: 600;
 <a href="关于我们.html" class="nav-link text-white hover:text-gray-200">关于我们</a>
 <a href="加入我们.html" class="nav-link text-white hover:text-gray-200 active">加入我们</a>
 </nav>
-<button class="md:hidden text-white w-10 h-10 flex items-center justify-center">
+<button id="mobileMenuButton" class="md:hidden text-white w-10 h-10 touch-target flex items-center justify-center">
 <i class="ri-menu-line ri-2x"></i>
 </button>
 </div>
 </header>
 <!-- 移动端导航菜单 -->
-<div class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6">
+<div id="mobileMenu" class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6 mobile-menu">
 <div class="flex flex-col space-y-6">
-<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">主页</a>
-<a href="#" class="text-white text-xl font-medium border-b border-gray-700 pb-3">产品和解决方案</a>
-<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">联系我们</a>
-<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">关于我们</a>
-<a href="加入我们.html" class="text-white text-xl font-medium pb-3">加入我们</a>
+<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">主页</a>
+<div class="relative">
+<button id="mobileProductDropdownBtn" class="w-full text-left text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target flex justify-between items-center">
+产品和解决方案
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div id="mobileProductDropdown" class="hidden pl-4 pt-2 pb-2">
+<a href="产品与解决方案-SEL.html" class="block text-white text-lg py-2 touch-target">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block text-white text-lg py-2 touch-target">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block text-white text-lg py-2 touch-target">开关柜组件</a>
+</div>
+</div>
+<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">联系我们</a>
+<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">关于我们</a>
+<a href="加入我们.html" class="text-white text-xl font-medium pb-3 touch-target">加入我们</a>
 </div>
 </div>
 <!-- 主要内容区 -->
@@ -104,7 +124,7 @@ font-weight: 600;
 <div class="mb-4">
 <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 !rounded-full text-xs font-medium">全职</span>
 </div>
-<h1 class="text-3xl font-bold text-gray-800 mb-4">电气、电仪销售工程师</h1>
+<h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 mobile-title text-wrap">电气、电仪销售工程师</h1>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
 <div class="flex items-center">
 <div class="w-6 h-6 flex items-center justify-center mr-2 text-primary">
@@ -158,80 +178,23 @@ font-weight: 600;
 <!-- 页脚 -->
 <footer class="bg-primary text-white py-6">
 <div class="container mx-auto px-6">
-<div class="flex justify-between items-center">
-<div class="flex items-center space-x-12">
-<div class="flex items-center gap-3">
+<div class="flex justify-between items-center footer-container">
+<div class="flex items-center space-x-12 footer-info">
+<div class="footer-icon">
 <i class="ri-phone-line text-white text-xl"></i>
-<span class="text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
+<span class="ml-2 text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
 </div>
-<div class="flex items-center gap-3">
+<div class="footer-icon">
 <i class="ri-mail-line text-white text-xl"></i>
-<span class="text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
+<span class="ml-2 text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
 </div>
 </div>
-<div class="text-white">
+<div class="text-white copyright">
 <span class="text-sm">© 2025 成都蜀锐科技有限公司 保留所有权利</span>
 </div>
 </div>
 </div>
 </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-const mobileMenuButton = document.querySelector('.md\\:hidden');
-const mobileMenu = document.querySelector('.hidden.fixed.inset-0');
-const productDropdownBtn = document.getElementById('productDropdownBtn');
-const productDropdown = document.getElementById('productDropdown');
-let isDropdownOpen = false;
-let dropdownTimeout;
-
-mobileMenuButton.addEventListener('click', function() {
-if (mobileMenu.classList.contains('hidden')) {
-mobileMenu.classList.remove('hidden');
-mobileMenu.classList.add('flex');
-mobileMenuButton.innerHTML = '<i class="ri-close-line ri-2x"></i>';
-} else {
-mobileMenu.classList.add('hidden');
-mobileMenu.classList.remove('flex');
-mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
-}
-});
-
-const productDropdownContainer = document.querySelector('.relative');
-productDropdownContainer.addEventListener('mouseenter', function() {
-clearTimeout(dropdownTimeout);
-productDropdown.classList.remove('hidden');
-isDropdownOpen = true;
-});
-
-productDropdownContainer.addEventListener('mouseleave', function() {
-dropdownTimeout = setTimeout(function() {
-productDropdown.classList.add('hidden');
-isDropdownOpen = false;
-}, 300); // 300ms delay before hiding
-});
-
-productDropdown.addEventListener('mouseenter', function() {
-clearTimeout(dropdownTimeout);
-});
-
-productDropdown.addEventListener('mouseleave', function() {
-dropdownTimeout = setTimeout(function() {
-productDropdown.classList.add('hidden');
-isDropdownOpen = false;
-}, 300);
-});
-
-document.addEventListener('click', function(e) {
-if (!productDropdown.contains(e.target) && !productDropdownBtn.contains(e.target)) {
-productDropdown.classList.add('hidden');
-isDropdownOpen = false;
-}
-});
-
-productDropdown.addEventListener('click', function(e) {
-e.stopPropagation();
-});
-});
-</script>
+<script src="mobile-nav.js"></script>
 </body>
 </html>
