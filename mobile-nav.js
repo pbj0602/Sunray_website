@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // 获取DOM元素
   const mobileMenuButton = document.getElementById('mobileMenuButton');
   const mobileMenu = document.getElementById('mobileMenu');
-  const mobileProductDropdownBtn = document.getElementById('mobileProductDropdownBtn');
-  const mobileProductDropdown = document.getElementById('mobileProductDropdown');
   
   // 桌面端下拉菜单控制
   const productDropdownBtn = document.getElementById('productDropdownBtn');
@@ -22,35 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.add('hidden');
         mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
       }
-    });
-  }
-  
-  // 移动端产品下拉菜单
-  if (mobileProductDropdownBtn && mobileProductDropdown) {
-    mobileProductDropdownBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      // 直接操作显示/隐藏，不使用 CSS 过渡效果
-      if (mobileProductDropdown.classList.contains('hidden')) {
-        mobileProductDropdown.classList.remove('hidden');
-        mobileProductDropdown.style.display = 'block';
-        mobileProductDropdownBtn.querySelector('i').classList.remove('ri-arrow-down-s-line');
-        mobileProductDropdownBtn.querySelector('i').classList.add('ri-arrow-up-s-line');
-      } else {
-        mobileProductDropdown.classList.add('hidden');
-        mobileProductDropdown.style.display = 'none';
-        mobileProductDropdownBtn.querySelector('i').classList.remove('ri-arrow-up-s-line');
-        mobileProductDropdownBtn.querySelector('i').classList.add('ri-arrow-down-s-line');
-      }
-    });
-    
-    // 确保子菜单链接能够正常点击
-    const mobileDropdownLinks = mobileProductDropdown.querySelectorAll('a');
-    mobileDropdownLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.stopPropagation();
-      });
     });
   }
   
