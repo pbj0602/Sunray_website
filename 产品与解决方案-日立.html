@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品和解决方案 - 日立能源电缆附件</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+body {
+font-family: 'Noto Sans SC', sans-serif;
+}
+h1, h2, h3 {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 700;
+}
+p, a, span {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 400;
+}
+.group:hover .nav-link::after {
+width: 100%;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: white;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.nav-link.active {
+font-weight: 600;
+}
+.product-card {
+transition: all 0.3s ease;
+}
+.product-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.modal {
+transition: opacity 0.3s ease;
+}
+input:focus {
+outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- 顶部导航栏 -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
+<div class="container mx-auto px-6 py-6 flex justify-between items-center">
+<a href="#" class="inline-block">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5508ecad1a22066c1ff4e9a747fa5fd5.png" alt="logo" class="h-16 object-contain">
+</a>
+<nav class="hidden md:flex space-x-10 text-lg ml-10">
+<a href="index.html" class="nav-link text-white hover:text-gray-200">主页</a>
+<div class="relative">
+<button class="nav-link text-white hover:text-gray-200 flex items-center gap-1 active" id="productDropdownBtn">
+产品和解决方案
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div id="productDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-lg py-2 mt-2">
+<a href="产品与解决方案-SEL.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">开关柜组件</a>
+</div>
+</div>
+<a href="联系我们.html" class="nav-link text-white hover:text-gray-200">联系我们</a>
+<a href="关于我们.html" class="nav-link text-white hover:text-gray-200">关于我们</a>
+<a href="加入我们.html" class="nav-link text-white hover:text-gray-200">加入我们</a>
+</nav>
+<button class="md:hidden text-white w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</header>
+<!-- 移动端导航菜单 -->
+<div class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6">
+<div class="flex flex-col space-y-6">
+<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">主页</a>
+<a href="#" class="text-white text-xl font-medium border-b border-gray-700 pb-3">产品和解决方案</a>
+<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">联系我们</a>
+<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">关于我们</a>
+<a href="加入我们.html" class="text-white text-xl font-medium pb-3">加入我们</a>
+</div>
+</div>
+<!-- Banner区域 -->
+<section class="pt-[100px] relative bg-gray-100">
+<div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20electrical%20cable%20accessories%20and%20connectors%20displayed%20in%20a%20modern%20industrial%20setting%2C%20featuring%20high%20voltage%20cable%20terminations%20and%20joints%20with%20blue%20accents%2C%20clean%20professional%20environment%20with%20technical%20details&width=1600&height=800&seq=12345&orientation=landscape" class="w-full h-full object-cover object-center" alt="电缆附件产品">
+<div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
+<h1 class="text-3xl md:text-5xl font-bold mb-4">日立能源电缆附件产品</h1>
+<p class="text-xl md:text-2xl max-w-3xl">全面的电缆连接解决方案</p>
+</div>
+</div>
+</section>
+<!-- 产品展示区 -->
+<main class="container mx-auto px-4 py-12">
+<!-- 12-42千伏电缆附件 -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8 bg-primary p-4 rounded shadow-sm">
+<h2 class="text-2xl font-bold text-white mb-4 md:mb-0">12-42千伏电缆附件</h2>
+<a href="联系我们.html" class="bg-white hover:bg-gray-100 text-primary py-2 px-6 !rounded-button transition-colors whitespace-nowrap">联系我们</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ffb7f70bc60738d3c8c71e88a70f12ba.png" class="w-full h-full object-cover object-top" alt="屏蔽式可分离连接器">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">屏蔽式可分离连接器</h3>
+<p class="text-gray-700">带/不带避雷器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a074dee6fd137c63c028b33226bd6b59.png" class="w-full h-full object-cover object-top" alt="冷缩电缆附件">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">冷缩电缆附件</h3>
+<p class="text-gray-700">终端、接头</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5585466c01f2849b562d1b8457266d2d.png" class="w-full h-full object-cover object-top" alt="内锥插拔式 GIS 终端">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">内锥插拔式 GIS 终端</h3>
+<p class="text-gray-700">2#和3#</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/67782f71fd92bf8dc3b5ede65e39da19.png" class="w-full h-full object-cover object-top" alt="冷缩接地附件工具包">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">冷缩接地附件工具包</h3>
+<p class="text-gray-700">专业安装工具套装</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 52-145千伏电缆附件 -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8 bg-primary p-4 rounded shadow-sm">
+<h2 class="text-2xl font-bold text-white mb-4 md:mb-0">52-145千伏电缆附件</h2>
+<a href="联系我们.html" class="bg-white hover:bg-gray-100 text-primary py-2 px-6 !rounded-button transition-colors whitespace-nowrap">联系我们</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0aaec18886ceb3677aa63f78ddebf40a.png" class="w-full h-full object-cover object-top" alt="充油式户外终端">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">充油式户外终端</h3>
+<p class="text-gray-700">145 千伏</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e09116c833c0237d62ca16679112f3cb.png" class="w-full h-full object-cover object-top" alt="干式插接式 GIS/变压器终端">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">干式插接式 GIS/变压器终端</h3>
+<p class="text-gray-700">145千伏</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ef618732f7fb80fe188797fa1b6e7b82.png" class="w-full h-full object-cover object-top" alt="预制接头">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">预制接头</h3>
+<p class="text-gray-700">145 千伏</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/1a86502ad2a0eba9f822fde3f986161e.png" class="w-full h-full object-cover object-top" alt="干式柔性户外终端">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">干式柔性户外终端</h3>
+<p class="text-gray-700">123 千伏</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e5f230b8b6e2d328c22db85af6ececeb.png" class="w-full h-full object-cover object-top" alt="屏蔽式可分离连接器">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">屏蔽式可分离连接器</h3>
+<p class="text-gray-700">72.5 千伏</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</main>
+<!-- 页脚 -->
+<footer class="bg-primary text-white py-6">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center space-x-12">
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
+</div>
+</div>
+<div class="text-white">
+<span class="text-sm">© 2025 成都蜀锐科技有限公司 保留所有权利</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.querySelector('.hidden.fixed.inset-0');
+const productDropdownBtn = document.getElementById('productDropdownBtn');
+const productDropdown = document.getElementById('productDropdown');
+let isDropdownOpen = false;
+let dropdownTimeout;
+
+mobileMenuButton.addEventListener('click', function() {
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.remove('hidden');
+mobileMenu.classList.add('flex');
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-2x"></i>';
+} else {
+mobileMenu.classList.add('hidden');
+mobileMenu.classList.remove('flex');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
+}
+});
+
+const productDropdownContainer = document.querySelector('.relative');
+productDropdownContainer.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+productDropdown.classList.remove('hidden');
+isDropdownOpen = true;
+});
+
+productDropdownContainer.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300); // 300ms delay before hiding
+});
+
+productDropdown.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+});
+
+productDropdown.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300);
+});
+
+document.addEventListener('click', function(e) {
+if (!productDropdown.contains(e.target) && !productDropdownBtn.contains(e.target)) {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}
+});
+
+productDropdown.addEventListener('click', function(e) {
+e.stopPropagation();
+});
+});
+</script>
+</body>
+</html>

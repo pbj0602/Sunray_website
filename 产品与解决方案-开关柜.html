@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品和解决方案 - 开关柜组件</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+body {
+font-family: 'Noto Sans SC', sans-serif;
+}
+h1, h2, h3 {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 700;
+}
+p, a, span {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 400;
+}
+.group:hover .nav-link::after {
+width: 100%;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: white;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.nav-link.active {
+font-weight: 600;
+}
+.product-card {
+transition: all 0.3s ease;
+}
+.product-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.modal {
+transition: opacity 0.3s ease;
+}
+input:focus {
+outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- 顶部导航栏 -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
+<div class="container mx-auto px-6 py-6 flex justify-between items-center">
+<a href="#" class="inline-block">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5508ecad1a22066c1ff4e9a747fa5fd5.png" alt="logo" class="h-16 object-contain">
+</a>
+<nav class="hidden md:flex space-x-10 text-lg ml-10">
+<a href="index.html" class="nav-link text-white hover:text-gray-200">主页</a>
+<div class="relative">
+<button class="nav-link text-white hover:text-gray-200 flex items-center gap-1 active" id="productDropdownBtn">
+产品和解决方案
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div id="productDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-lg py-2 mt-2">
+<a href="产品与解决方案-SEL.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">开关柜组件</a>
+</div>
+</div>
+<a href="联系我们.html" class="nav-link text-white hover:text-gray-200">联系我们</a>
+<a href="关于我们.html" class="nav-link text-white hover:text-gray-200">关于我们</a>
+<a href="加入我们.html" class="nav-link text-white hover:text-gray-200">加入我们</a>
+</nav>
+<button class="md:hidden text-white w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</header>
+<!-- 移动端导航菜单 -->
+<div class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6">
+<div class="flex flex-col space-y-6">
+<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">主页</a>
+<a href="#" class="text-white text-xl font-medium border-b border-gray-700 pb-3">产品和解决方案</a>
+<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">联系我们</a>
+<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">关于我们</a>
+<a href="加入我们.html" class="text-white text-xl font-medium pb-3">加入我们</a>
+</div>
+</div>
+<!-- Banner区域 -->
+<section class="pt-[100px] relative bg-gray-100">
+<div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20electrical%20cable%20accessories%20and%20connectors%20displayed%20in%20a%20modern%20industrial%20setting%2C%20featuring%20high%20voltage%20cable%20terminations%20and%20joints%20with%20blue%20accents%2C%20clean%20professional%20environment%20with%20technical%20details&width=1600&height=800&seq=12345&orientation=landscape" class="w-full h-full object-cover object-center" alt="电缆附件产品">
+<div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
+<h1 class="text-3xl md:text-5xl font-bold mb-4">开关柜组件</h1>
+</div>
+</div>
+</section>
+<!-- 产品展示区 -->
+<main class="container mx-auto px-4 py-12">
+<!-- 辅助继电器 -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8 bg-primary p-4 rounded shadow-sm">
+<h2 class="text-2xl font-bold text-white mb-4 md:mb-0">辅助继电器</h2>
+<a href="联系我们.html" class="bg-white hover:bg-gray-100 text-primary py-2 px-6 !rounded-button transition-colors whitespace-nowrap">联系我们</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b2d25a4e4f01cb0e338fda4f2d83d33e.jpeg" class="w-full h-full object-cover object-top" alt="Auxiliary Relays">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Auxiliary Relays</h3>
+<p class="text-gray-700">辅助继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/30cbcee2d7d2d8629c8e31cc72ef9056.jpeg" class="w-full h-full object-cover object-top" alt="Trip and Lockout Relays">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Trip and Lockout Relays</h3>
+<p class="text-gray-700">跳闸和闭锁继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2cb55e74e1d49b733887efac7175cd93.jpeg" class="w-full h-full object-cover object-top" alt="Supervision Relays">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Supervision Relays</h3>
+<p class="text-gray-700">监视继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3442c8661c1ae3a1d2f76bd3dde92a31.jpeg" class="w-full h-full object-cover object-top" alt="Contactor Relays">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Contactor Relays</h3>
+<p class="text-gray-700">接触器继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/26a056f1ab23ee0cfeafedc7adc62c4c.jpeg" class="w-full h-full object-cover object-top" alt="Relay Sockets">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Relay Sockets and Accessories</h3>
+<p class="text-gray-700">继电器插座和附件</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0353ee246335f0e0bdd9a26ca113b7eb.jpeg" class="w-full h-full object-cover object-top" alt="Trip and Auxiliary Relays">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Trip, Supervision and Auxiliary Relays</h3>
+<p class="text-gray-700">跳闸、监视和辅助继电器</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 转换开关 -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8 bg-primary p-4 rounded shadow-sm">
+<h2 class="text-2xl font-bold text-white mb-4 md:mb-0">转换开关</h2>
+<a href="联系我们.html" class="bg-white hover:bg-gray-100 text-primary py-2 px-6 !rounded-button transition-colors whitespace-nowrap">联系我们</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/64297367c164201faabf69eeebc89c1d.png" class="w-full h-full object-cover object-top" alt="Auxiliary Switches">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Auxiliary Switches, 16 Amps (Series 1)</h3>
+<p class="text-gray-700">16A 辅助开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d2d19a8146f844a8e7279375e51a4aa1.png" class="w-full h-full object-cover object-top" alt="Cam Switches">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Cam Switches SN Series</h3>
+<p class="text-gray-700">凸轮开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/aed41e29485834d0e5f5badb0980e1a8.png" class="w-full h-full object-cover object-top" alt="Circuit Breaker Control Switch">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Circuit Breaker Control Switch – Series 26</h3>
+<p class="text-gray-700">断路器控制开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/111ab344b1ea27c9a3db270d616401d0.png" class="w-full h-full object-cover object-top" alt="Control Switch Relay">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Control Switch Relay (CSR) – Series 26</h3>
+<p class="text-gray-700">控制开关继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/944df12a96de47193707a0124515ef73.png" class="w-full h-full object-cover object-top" alt="Detent Action Rotary Switches">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Detent Action Rotary Switches – Series 16</h3>
+<p class="text-gray-700">定位旋转开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f6e7e472eab50c3bc32b535130ce945f.png" class="w-full h-full object-cover object-top" alt="Detented Power Switches">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Detented Power Switches 30 Amp Series 26</h3>
+<p class="text-gray-700">30A 定位功率开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f3ab240a01b3f52c1b2d879e2641ae1d.png" class="w-full h-full object-cover object-top" alt="Latching Switch Relay Series 16">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Latching Switch Relay (LSR) – Series 16</h3>
+<p class="text-gray-700">自锁开关继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d7fcd2c82624fb09610cd3b3db09e4a9.png" class="w-full h-full object-cover object-top" alt="Latching Switch Relay Series 26">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Latching Switch Relay (LSR) – Series 26</h3>
+<p class="text-gray-700">自锁开关继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2fc104bb3735a83cc4d303a743e2e3da.png" class="w-full h-full object-cover object-top" alt="Lock-Out Relay">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Lock-Out Relay, LOR – Series 26</h3>
+<p class="text-gray-700">闭锁继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ee984d7634a699c9e6922483ce0641d3.png" class="w-full h-full object-cover object-top" alt="Lock-Out Relay Push To Test">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Lock-Out Relay, LOR – Series 26 – Push To Test</h3>
+<p class="text-gray-700">带测试按钮闭锁继电器</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a79cfee7eb556a36b84ffeca869ed9c2.jpeg" class="w-full h-full object-cover object-top" alt="Series 26 Optional Accessories">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Series 26 Optional Accessories</h3>
+<p class="text-gray-700">系列26配件</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/73d3989c7e38dacac7149e32dd761449.png" class="w-full h-full object-cover object-top" alt="Snap Action Rotary Switch">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Snap Action Rotary Switch, 16 Amps, Series 1</h3>
+<p class="text-gray-700">16A 快动旋转开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/61160a4ae27873898191098050eff880.png" class="w-full h-full object-cover object-top" alt="Snap Action Rotary Switch Series 3">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Snap Action Rotary Switch, 30 Amps, Series 3</h3>
+<p class="text-gray-700">30A 快动旋转开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/60a9e50f34015456a6a24d74af54b67c.png" class="w-full h-full object-cover object-top" alt="Snap Action Rotary Switch Railroad">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Snap-Action Rotary Switch – 345 Railroad Series</h3>
+<p class="text-gray-700">铁路专用快动旋转开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/851d9b45f9a80326dcbe94975ec559bb.png" class="w-full h-full object-cover object-top" alt="Time Delay Relay">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Time Delay Relay (TDR) For Arc Flash Protection</h3>
+<p class="text-gray-700">弧光保护时间继电器</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 测试开关 -->
+<section class="mb-16">
+<div class="flex flex-col md:flex-row justify-between items-center mb-8 bg-primary p-4 rounded shadow-sm">
+<h2 class="text-2xl font-bold text-white mb-4 md:mb-0">测试开关</h2>
+<a href="联系我们.html" class="bg-white hover:bg-gray-100 text-primary py-2 px-6 !rounded-button transition-colors whitespace-nowrap">联系我们</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d40e04e15997e80a48aa3597fd61e0d5.jpeg" class="w-full h-full object-cover object-top" alt="TSB 14">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Secondary injection test blocks - saTECH TSB 14</h3>
+<p class="text-gray-700">14 端子二次注入测试端子</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/4594ccd7f4e8879c95fb0563b826c956.jpeg" class="w-full h-full object-cover object-top" alt="TSB 18">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">Secondary injection test blocks - saTECH TSB 18</h3>
+<p class="text-gray-700">18 端子二次注入测试端子</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ae0b4fba013fc21fa20c7d0d579e7f92.png" class="w-full h-full object-cover object-top" alt="FT Test accessories">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT Test accessories</h3>
+<p class="text-gray-700">测试附件</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/cd439864fc510a9e7b008cd9e14105b4.png" class="w-full h-full object-cover object-top" alt="FT-1">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-1</h3>
+<p class="text-gray-700">标准测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/de390b0fff2b09d5e5828940e249af56.jpeg" class="w-full h-full object-cover object-top" alt="FT-1F">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-1F</h3>
+<p class="text-gray-700">增强型测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/73abc23d717660e1624d909d08b33bc7.jpeg" class="w-full h-full object-cover object-top" alt="FT-1X">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-1X</h3>
+<p class="text-gray-700">扩展型测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20test%20switch%20FT-19R%2C%20industrial%20grade%20testing%20equipment%20with%20rack%20mount%20design%2C%20blue%20and%20gray%20control%20panel%20with%20status%20indicators&width=600&height=400&seq=12451&orientation=landscape" class="w-full h-full object-cover object-top" alt="FT-19R">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-19R</h3>
+<p class="text-gray-700">机架式测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20test%20switch%20FT-19RS%2C%20industrial%20grade%20testing%20equipment%20with%20rack%20mount%20and%20safety%20features%2C%20blue%20and%20gray%20control%20panel%20with%20enhanced%20safety%20indicators&width=600&height=400&seq=12452&orientation=landscape" class="w-full h-full object-cover object-top" alt="FT-19RS">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-19RS</h3>
+<p class="text-gray-700">安全型机架式测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20test%20switch%20FT-19RX%2C%20industrial%20grade%20testing%20equipment%20with%20extended%20rack%20mount%20features%2C%20blue%20and%20gray%20control%20panel%20with%20comprehensive%20status%20indicators&width=600&height=400&seq=12453&orientation=landscape" class="w-full h-full object-cover object-top" alt="FT-19RX">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-19RX</h3>
+<p class="text-gray-700">扩展型机架式测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20test%20switch%20FT-14D%2C%20industrial%20grade%20testing%20equipment%20with%20digital%20display%2C%20blue%20and%20gray%20control%20panel%20with%20digital%20indicators&width=600&height=400&seq=12454&orientation=landscape" class="w-full h-full object-cover object-top" alt="FT-14D">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-14D</h3>
+<p class="text-gray-700">数字显示测试开关</p>
+</div>
+</div>
+<div class="product-card bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-100 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%20test%20switch%20FT-14%2C%20industrial%20grade%20testing%20equipment%20with%20standard%20configuration%2C%20blue%20and%20gray%20control%20panel%20with%20basic%20indicators&width=600&height=400&seq=12455&orientation=landscape" class="w-full h-full object-cover object-top" alt="FT-14">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-primary">FT-14</h3>
+<p class="text-gray-700">标准测试开关</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</main>
+<!-- 页尾 -->
+<footer class="bg-primary text-white py-6">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center space-x-12">
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
+</div>
+</div>
+<div class="text-white">
+<span class="text-sm">© 2025 成都蜀锐科技有限公司 保留所有权利</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.querySelector('.hidden.fixed.inset-0');
+const productDropdownBtn = document.getElementById('productDropdownBtn');
+const productDropdown = document.getElementById('productDropdown');
+let isDropdownOpen = false;
+let dropdownTimeout;
+
+mobileMenuButton.addEventListener('click', function() {
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.remove('hidden');
+mobileMenu.classList.add('flex');
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-2x"></i>';
+} else {
+mobileMenu.classList.add('hidden');
+mobileMenu.classList.remove('flex');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
+}
+});
+
+const productDropdownContainer = document.querySelector('.relative');
+productDropdownContainer.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+productDropdown.classList.remove('hidden');
+isDropdownOpen = true;
+});
+
+productDropdownContainer.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300); // 300ms delay before hiding
+});
+
+productDropdown.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+});
+
+productDropdown.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300);
+});
+
+document.addEventListener('click', function(e) {
+if (!productDropdown.contains(e.target) && !productDropdownBtn.contains(e.target)) {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}
+});
+
+productDropdown.addEventListener('click', function(e) {
+e.stopPropagation();
+});
+});
+</script>
+</body>
+</html>

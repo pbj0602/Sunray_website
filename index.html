@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业官网</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+body {
+font-family: 'Noto Sans SC', sans-serif;
+}
+h1, h2, h3 {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 700;
+}
+p, a, span {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 400;
+}
+.group:hover .nav-link::after {
+width: 100%;
+}
+.hero-section {
+background-image: url('https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b669d043391629d94fc0f7a27ea1ba8a.jpeg');
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.hero-section::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(90deg, rgba(0,51,102,0.4) 0%, rgba(0,51,102,0.3) 50%, rgba(0,51,102,0.2) 100%);
+}
+input:focus {
+outline: none;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: white;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.nav-link.active {
+font-weight: 600;
+}
+</style>
+</head>
+<body class="min-h-screen">
+<!-- 顶部导航栏 -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
+<div class="container mx-auto px-6 py-6 flex justify-between items-center">
+<a href="#" class="inline-block">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5508ecad1a22066c1ff4e9a747fa5fd5.png" alt="logo" class="h-16 object-contain">
+</a>
+<nav class="hidden md:flex space-x-10 text-lg ml-10">
+<a href="index.html" class="nav-link text-white hover:text-gray-200 active">主页</a>
+<div class="relative">
+<button class="nav-link text-white hover:text-gray-200 flex items-center gap-1" id="productDropdownBtn">
+产品和解决方案
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div id="productDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-lg py-2 mt-2">
+<a href="产品与解决方案-SEL.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">开关柜组件</a>
+</div>
+</div>
+<a href="联系我们.html" class="nav-link text-white hover:text-gray-200">联系我们</a>
+<a href="关于我们.html" class="nav-link text-white hover:text-gray-200">关于我们</a>
+<a href="加入我们.html" class="nav-link text-white hover:text-gray-200">加入我们</a>
+</nav>
+<button class="md:hidden text-white w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</header>
+<!-- 移动端导航菜单 -->
+<div class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6">
+<div class="flex flex-col space-y-6">
+<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">主页</a>
+<a href="#" class="text-white text-xl font-medium border-b border-gray-700 pb-3">产品和解决方案</a>
+<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">联系我们</a>
+<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">关于我们</a>
+<a href="加入我们.html" class="text-white text-xl font-medium pb-3">加入我们</a>
+</div>
+</div>
+<!-- 大图Banner区域 -->
+<section class="hero-section h-screen flex items-center justify-center mt-0" style="filter: brightness(1.2);">
+<div class="container mx-auto px-6 relative z-10 text-white -mt-40">
+<div class="max-w-3xl mx-auto text-center">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 whitespace-nowrap drop-shadow-lg leading-tight" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">赋能电力安全，智启能源未来</h1>
+<p class="text-xl md:text-2xl mb-10 drop-shadow-lg leading-relaxed" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">我们致力于打造更安全、更智能的电力系统。</p>
+<a href="关于我们.html" class="inline-block bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-primary text-white font-semibold py-3 px-8 !rounded-button transition duration-300 shadow-lg">了解更多</a>
+</div>
+</div>
+</section>
+<!-- 产品和解决方案 -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-tight">产品和解决方案</h2>
+<div class="max-w-7xl mx-auto">
+<!-- 产品部分 -->
+<div class="flex flex-col md:flex-row items-center mb-12 gap-8">
+<div class="w-full md:w-1/2">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e0a6d9c127a1146ebb4a1a8b57c0cf4c.jpeg" alt="产品图片" class="rounded-lg shadow-xl object-cover w-full aspect-[4/3] object-top brightness-110">
+</div>
+<div class="w-full md:w-1/2 md:pl-8">
+<h3 class="text-3xl font-bold text-gray-800 mb-4">微机保护及自动化产品</h3>
+<p class="text-lg text-gray-600 mb-8">SEL官方授权代理</p>
+<a href="产品与解决方案-SEL.html" class="inline-block bg-primary text-white font-semibold py-4 px-10 !rounded-button transition duration-300 hover:bg-opacity-90 whitespace-nowrap text-lg">SEL产品系列</a>
+</div>
+</div>
+<!-- 解决方案部分 -->
+<div class="flex flex-col-reverse md:flex-row items-center mb-20 gap-12">
+<div class="w-full md:w-1/2 md:pr-12 text-right">
+<h3 class="text-3xl font-bold text-gray-800 mb-4">电力控制柜组件</h3>
+<p class="text-lg text-gray-600 mb-8">继电器、测试开关、转换开关等</p>
+<a href="产品与解决方案-开关柜.html" class="inline-block bg-primary text-white font-semibold py-4 px-10 !rounded-button transition duration-300 hover:bg-opacity-90 whitespace-nowrap text-lg">美标、欧标产品系列</a>
+</div>
+<div class="w-full md:w-1/2">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0b67191803dea6b9bbf2e1426a72b1b3.jpeg" alt="解决方案图片" class="rounded-xl shadow-2xl object-cover w-full aspect-[4/3] object-top scale-x-[-1]">
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/1971adbb6bbc39cd7ec57b30ea4c912a.webp" alt="电缆附件图片" class="rounded-xl shadow-2xl object-cover w-full aspect-[4/3] object-top brightness-110">
+</div>
+<div class="w-full md:w-1/2 md:pl-12">
+<h3 class="text-3xl font-bold text-gray-800 mb-4">电缆附件</h3>
+<p class="text-lg text-gray-600 mb-8">全系列连接器、终端和接头附件</p>
+<a href="产品与解决方案-日立.html" class="inline-block bg-primary text-white font-semibold py-4 px-10 !rounded-button transition duration-300 hover:bg-opacity-90 whitespace-nowrap text-lg">日立能源12-145kV产品系列</a>
+</div>
+</div>
+<div class="flex flex-col-reverse md:flex-row items-center mt-20 gap-12">
+<div class="w-full md:w-1/2 md:pr-12 text-right">
+<h3 class="text-3xl font-bold text-gray-800 mb-4">技术服务</h3>
+<p class="text-lg text-gray-600 mb-8">组屏、调试、集成、检验、故障分析、模拟仿真</p>
+<a href="联系我们.html" class="inline-block bg-primary text-white font-semibold py-4 px-10 !rounded-button transition duration-300 hover:bg-opacity-90 whitespace-nowrap text-lg">了解详情</a>
+</div>
+<div class="w-full md:w-1/2">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6e48d5e411a597dc6ac9a13d92b57713.jpeg" alt="技术服务图片" class="rounded-xl shadow-2xl object-cover w-full aspect-[4/3] object-top scale-x-[-1]">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 页脚 -->
+<footer class="bg-primary text-white py-6">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center space-x-12">
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
+</div>
+</div>
+<div class="text-white">
+<span class="text-sm">© 2025 成都蜀锐科技有限公司 保留所有权利</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.querySelector('.hidden.fixed.inset-0');
+const productDropdownBtn = document.getElementById('productDropdownBtn');
+const productDropdown = document.getElementById('productDropdown');
+let isDropdownOpen = false;
+let dropdownTimeout;
+
+mobileMenuButton.addEventListener('click', function() {
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.remove('hidden');
+mobileMenu.classList.add('flex');
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-2x"></i>';
+} else {
+mobileMenu.classList.add('hidden');
+mobileMenu.classList.remove('flex');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
+}
+});
+
+const productDropdownContainer = document.querySelector('.relative');
+productDropdownContainer.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+productDropdown.classList.remove('hidden');
+isDropdownOpen = true;
+});
+
+productDropdownContainer.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300); // 300ms delay before hiding
+});
+
+productDropdown.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+});
+
+productDropdown.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300);
+});
+
+document.addEventListener('click', function(e) {
+if (!productDropdown.contains(e.target) && !productDropdownBtn.contains(e.target)) {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}
+});
+
+productDropdown.addEventListener('click', function(e) {
+e.stopPropagation();
+});
+});
+</script>
+</body>
+</html> 

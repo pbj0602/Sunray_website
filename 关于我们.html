@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我们 - 成都蜀锐</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+body {
+font-family: 'Noto Sans SC', sans-serif;
+}
+h1, h2, h3 {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 700;
+}
+p, a, span {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 400;
+}
+.group:hover .nav-link::after {
+width: 100%;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: white;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.nav-link.active {
+font-weight: 600;
+}
+.partner-logos {
+animation: scroll 30s linear infinite;
+}
+@keyframes scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.domain-card {
+overflow: hidden;
+}
+.domain-card img {
+transition: transform 0.5s ease;
+}
+.domain-card:hover img {
+transform: scale(1.1);
+}
+</style>
+</head>
+<body class="min-h-screen">
+<!-- 顶部导航栏 -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
+<div class="container mx-auto px-6 py-6 flex justify-between items-center">
+<a href="#" class="inline-block">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5508ecad1a22066c1ff4e9a747fa5fd5.png" alt="logo" class="h-16 object-contain">
+</a>
+<nav class="hidden md:flex space-x-10 text-lg ml-10">
+<a href="index.html" class="nav-link text-white hover:text-gray-200">主页</a>
+<div class="relative">
+<button class="nav-link text-white hover:text-gray-200 flex items-center gap-1" id="productDropdownBtn">
+产品和解决方案
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div id="productDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-lg py-2 mt-2">
+<a href="产品与解决方案-SEL.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">开关柜组件</a>
+</div>
+</div>
+<a href="联系我们.html" class="nav-link text-white hover:text-gray-200">联系我们</a>
+<a href="关于我们.html" class="nav-link text-white hover:text-gray-200 active">关于我们</a>
+<a href="加入我们.html" class="nav-link text-white hover:text-gray-200">加入我们</a>
+</nav>
+<button class="md:hidden text-white w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</header>
+<!-- 移动端导航菜单 -->
+<div class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6">
+<div class="flex flex-col space-y-6">
+<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">主页</a>
+<a href="#" class="text-white text-xl font-medium border-b border-gray-700 pb-3">产品和解决方案</a>
+<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">联系我们</a>
+<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3">关于我们</a>
+<a href="加入我们.html" class="text-white text-xl font-medium pb-3">加入我们</a>
+</div>
+</div>
+<!-- 主内容区 -->
+<main class="pt-28">
+<!-- 了解成都蜀锐 -->
+<section class="relative h-[480px] bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(10, 59, 108, 0.9), rgba(10, 59, 108, 0.7), rgba(10, 59, 108, 0.1)), url('https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/501f31b8b51d466a4247cd25d21655b2.webp')">
+<div class="container mx-auto px-6 h-full flex items-center">
+<div class="max-w-3xl text-white">
+<h1 class="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+公司简介<span class="opacity-90 font-bold">
+</h1>
+<p class="text-xl leading-relaxed">成都蜀锐科技有限公司成立于2007年，位于成都市高新区。公司专注于电网自动化、变配电站自动化、智能楼宇及企业能源管理领域，业务涵盖高低压电气设备、综合微机保护系统、变配电自动化系统、电厂自动化设备等多个专业领域。</p>
+<p class="text-xl leading-relaxed mt-6">公司具备深化设计、现场施工、设备调试、软件组态、系统集成等全流程综合能力，能够承接各电压等级的电气自动化、微机综合保护及楼宇智能化等项目工程。</p>
+<p class="text-xl leading-relaxed mt-6">公司产品与服务广泛应用于电力、烟草、石化、电子制造、冶金等多个行业，并出口至海外市场。</p>
+</div>
+</div>
+</section>
+<!-- 合作伙伴 -->
+<section class="py-16 px-6 bg-gray-50">
+<div class="container mx-auto">
+<h2 class="text-4xl font-bold text-center text-[#0A3B6C] mb-12">合作伙伴</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition-all duration-300 group min-h-[200px]">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d681bccae6fea83ed6f5b55b4450ba0e.jpeg" alt="Schweitzer Engineering Laboratories" class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300">
+</div>
+<div class="bg-white p-8 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition-all duration-300 group min-h-[200px]">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5db7fb6ef8ecba823d9ec0a850423514.png" alt="Hitachi Energy" class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300">
+</div>
+<div class="bg-white p-8 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition-all duration-300 group min-h-[200px]">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2160c25b4d2756eab6c77e515a6617bc.jpeg" alt="Arteche" class="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300">
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 页脚 -->
+<footer class="bg-primary text-white py-6">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center">
+<div class="flex items-center space-x-12">
+<div class="flex items-center gap-3">
+<i class="ri-phone-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="ri-mail-line text-white text-xl"></i>
+<span class="text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
+</div>
+</div>
+<div class="text-white">
+<span class="text-sm">© 2025 成都蜀锐科技有限公司 保留所有权利</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.querySelector('.hidden.fixed.inset-0');
+const productDropdownBtn = document.getElementById('productDropdownBtn');
+const productDropdown = document.getElementById('productDropdown');
+let isDropdownOpen = false;
+let dropdownTimeout;
+
+mobileMenuButton.addEventListener('click', function() {
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.remove('hidden');
+mobileMenu.classList.add('flex');
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-2x"></i>';
+} else {
+mobileMenu.classList.add('hidden');
+mobileMenu.classList.remove('flex');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
+}
+});
+
+const productDropdownContainer = document.querySelector('.relative');
+productDropdownContainer.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+productDropdown.classList.remove('hidden');
+isDropdownOpen = true;
+});
+
+productDropdownContainer.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300); // 300ms delay before hiding
+});
+
+productDropdown.addEventListener('mouseenter', function() {
+clearTimeout(dropdownTimeout);
+});
+
+productDropdown.addEventListener('mouseleave', function() {
+dropdownTimeout = setTimeout(function() {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}, 300);
+});
+
+document.addEventListener('click', function(e) {
+if (!productDropdown.contains(e.target) && !productDropdownBtn.contains(e.target)) {
+productDropdown.classList.add('hidden');
+isDropdownOpen = false;
+}
+});
+
+productDropdown.addEventListener('click', function(e) {
+e.stopPropagation();
+});
+});
+</script>
+</body>
+</html>
