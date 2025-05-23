@@ -31,12 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       e.stopPropagation();
       
+      // 直接操作显示/隐藏，不使用 CSS 过渡效果
       if (mobileProductDropdown.classList.contains('hidden')) {
         mobileProductDropdown.classList.remove('hidden');
+        mobileProductDropdown.style.display = 'block';
         mobileProductDropdownBtn.querySelector('i').classList.remove('ri-arrow-down-s-line');
         mobileProductDropdownBtn.querySelector('i').classList.add('ri-arrow-up-s-line');
       } else {
         mobileProductDropdown.classList.add('hidden');
+        mobileProductDropdown.style.display = 'none';
         mobileProductDropdownBtn.querySelector('i').classList.remove('ri-arrow-up-s-line');
         mobileProductDropdownBtn.querySelector('i').classList.add('ri-arrow-down-s-line');
       }
