@@ -95,6 +95,7 @@ outline: none;
 <a href="产品与解决方案-SEL.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">SEL产品</a>
 <a href="产品与解决方案-日立.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">日立能源产品</a>
 <a href="产品与解决方案-开关柜.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">开关柜组件</a>
+<a href="产品与解决方案-解决方案.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">解决方案</a>
 </div>
 </div>
 <a href="联系我们.html" class="nav-link text-white hover:text-gray-200 active">联系我们</a>
@@ -116,6 +117,7 @@ outline: none;
 <a href="产品与解决方案-SEL.html" class="block text-white text-lg py-2 touch-target">SEL产品</a>
 <a href="产品与解决方案-日立.html" class="block text-white text-lg py-2 touch-target">日立能源产品</a>
 <a href="产品与解决方案-开关柜.html" class="block text-white text-lg py-2 touch-target">开关柜组件</a>
+<a href="产品与解决方案-解决方案.html" class="block text-white text-lg py-2 touch-target">解决方案</a>
 </div>
 </div>
 <a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">联系我们</a>
@@ -133,31 +135,51 @@ outline: none;
 </div>
 </div>
 </section>
-<!-- 联系信息区域 -->
-<section class="py-16 md:py-32 bg-gradient-to-b from-gray-50 to-white contact-section">
-<div class="container mx-auto px-4 md:px-6">
-<div class="max-w-6xl mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-<!-- 邮箱信息 -->
-<div class="bg-white p-8 md:p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center contact-card">
-<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 contact-icon">
-<i class="ri-mail-line ri-2x text-primary"></i>
-</div>
-<h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">电子邮箱</h3>
-<a href="mailto:info@e-sunray.com" class="text-base md:text-lg text-gray-600 hover:text-primary transition-colors touch-target">info@e-sunray.com</a>
-</div>
-<!-- 电话信息 -->
-<div class="bg-white p-8 md:p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center contact-card">
-<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 contact-icon">
-<i class="ri-phone-line ri-2x text-primary"></i>
-</div>
-<h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">联系电话</h3>
-<a href="tel:+862885293296" class="text-base md:text-lg text-gray-600 hover:text-primary transition-colors touch-target">+86 28 8529 3296</a>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <!-- 联系信息区域 -->
+    <section class="py-32 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- 邮箱信息 -->
+            <div
+              class="bg-white p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6"
+              >
+                <i class="ri-mail-line ri-2x text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                电子邮箱
+              </h3>
+              <a
+                href="mailto:info@e-sunray.com"
+                class="text-lg text-gray-600 hover:text-primary transition-colors"
+                >info@e-sunray.com</a
+              >
+            </div>
+            <!-- 电话信息 -->
+            <div
+              class="bg-white p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6"
+              >
+                <i class="ri-phone-line ri-2x text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                联系电话
+              </h3>
+              <a
+                href="tel:+862885293296"
+                class="text-lg text-gray-600 hover:text-primary transition-colors"
+                >+86 28 8529 3296</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 <!-- 页脚 -->
 <footer class="bg-primary text-white py-6">
 <div class="container mx-auto px-6">

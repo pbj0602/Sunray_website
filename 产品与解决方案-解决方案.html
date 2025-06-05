@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>产品和解决方案 - 解决方案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="mobile-fix.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+body {
+font-family: 'Noto Sans SC', sans-serif;
+}
+h1, h2, h3 {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 700;
+}
+p, a, span {
+font-family: 'Noto Sans SC', sans-serif;
+font-weight: 400;
+}
+.group:hover .nav-link::after {
+width: 100%;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: white;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.nav-link.active {
+font-weight: 600;
+}
+input:focus {
+outline: none;
+}
+@media (max-width: 640px) {
+  .product-card {
+    padding: 1.25rem !important;
+  }
+}
+</style>
+</head>
+<body class="min-h-screen bg-gray-50">
+<!-- 顶部导航栏 -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-primary shadow-md">
+<div class="container mx-auto px-6 py-6 flex justify-between items-center">
+<a href="index.html" class="inline-block">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5508ecad1a22066c1ff4e9a747fa5fd5.png" alt="logo" class="h-16 object-contain">
+</a>
+<nav class="hidden md:flex space-x-10 text-lg ml-10">
+<a href="index.html" class="nav-link text-white hover:text-gray-200">主页</a>
+<div class="relative">
+<button class="nav-link text-white hover:text-gray-200 flex items-center gap-1 active" id="productDropdownBtn">
+产品和解决方案
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div id="productDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-lg py-2 mt-2">
+<a href="产品与解决方案-SEL.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">开关柜组件</a>
+<a href="产品与解决方案-解决方案.html" class="block px-4 py-2 text-gray-800 hover:text-primary relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">解决方案</a>
+</div>
+</div>
+<a href="联系我们.html" class="nav-link text-white hover:text-gray-200">联系我们</a>
+<a href="关于我们.html" class="nav-link text-white hover:text-gray-200">关于我们</a>
+<a href="加入我们.html" class="nav-link text-white hover:text-gray-200">加入我们</a>
+</nav>
+<button id="mobileMenuButton" class="md:hidden text-white w-10 h-10 touch-target flex items-center justify-center">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</header>
+<!-- 移动端导航菜单 -->
+<div id="mobileMenu" class="hidden fixed inset-0 bg-primary z-50 pt-20 px-6 mobile-menu">
+<div class="flex flex-col space-y-6">
+<a href="index.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">主页</a>
+<div>
+<p class="text-white text-xl font-medium border-b border-gray-700 pb-3">产品和解决方案</p>
+<div class="pl-4 pt-2 pb-2">
+<a href="产品与解决方案-SEL.html" class="block text-white text-lg py-2 touch-target">SEL产品</a>
+<a href="产品与解决方案-日立.html" class="block text-white text-lg py-2 touch-target">日立能源产品</a>
+<a href="产品与解决方案-开关柜.html" class="block text-white text-lg py-2 touch-target">开关柜组件</a>
+<a href="产品与解决方案-解决方案.html" class="block text-white text-lg py-2 touch-target">解决方案</a>
+</div>
+</div>
+<a href="联系我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">联系我们</a>
+<a href="关于我们.html" class="text-white text-xl font-medium border-b border-gray-700 pb-3 touch-target">关于我们</a>
+<a href="加入我们.html" class="text-white text-xl font-medium pb-3 touch-target">加入我们</a>
+</div>
+</div>
+<main>
+<!-- Banner区域 -->
+<section class="pt-[100px] relative bg-gray-100 mobile-pt">
+<div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
+<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a75655ac550509c2f338d2627c43e4f5.jpeg" class="w-full h-full object-cover object-center" alt="解决方案">
+<div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
+<h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 mobile-title">解决方案</h1>
+<p class="text-lg sm:text-xl md:text-2xl max-w-3xl text-wrap mobile-text-adjust">我们提供全方位的电力系统自动化解决方案，从组装到验收的一站式服务</p>
+</div>
+</div>
+</section>
+    <!-- 业务范围 -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 组屏 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/195acde6bd6042d5435e294510d72428.jpeg"
+                class="w-full h-full object-cover"
+                alt="Panel Assembly"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                组屏 Panel Assembly
+              </h3>
+              <p class="text-gray-600">
+                专业的控制面板组装服务，确保每个组件的精确安装和可靠连接
+              </p>
+            </div>
+          </div>
+          <!-- 调试 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/9ac77119fb54f1c98b06c3d7db4f03af.jpeg"
+                class="w-full h-full object-cover"
+                alt="Commissioning"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                调试 Commissioning
+              </h3>
+              <p class="text-gray-600">
+                全面的系统调试服务，确保设备运行稳定可靠
+              </p>
+            </div>
+          </div>
+          <!-- 集成 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/8ff0d487b97a47e3eb6a5304424d999a.jpeg"
+                class="w-full h-full object-cover"
+                alt="Integration"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                集成 Integration
+              </h3>
+              <p class="text-gray-600">
+                智能系统集成解决方案，实现设备互联互通和智能化管理
+              </p>
+            </div>
+          </div>
+          <!-- 故障分析 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/452050426d884ff14e7591ce8a5ef6c6.jpeg"
+                class="w-full h-full object-cover"
+                alt="Fault Analysis"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                故障分析 Fault Analysis
+              </h3>
+              <p class="text-gray-600">
+                专业的故障诊断和分析服务，快速定位并解决系统问题
+              </p>
+            </div>
+          </div>
+          <!-- 模拟仿真 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5b6c8a541459cd856c8ed2cb14058d1e.jpeg"
+                class="w-full h-full object-cover"
+                alt="Simulation"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                模拟仿真 Simulation
+              </h3>
+              <p class="text-gray-600">
+                先进的系统模拟和仿真技术，优化系统性能和可靠性
+              </p>
+            </div>
+          </div>
+          <!-- 检验 -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/62212c0a03d726086cf9467dedd5d9b3.jpeg"
+                class="w-full h-full object-cover"
+                alt="Inspection"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                检验 Inspection
+              </h3>
+              <p class="text-gray-600">
+                严格的质量检验流程，确保设备符合行业标准和规范要求
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+<!-- 页尾 -->
+<footer class="bg-primary text-white py-6">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center footer-container">
+<div class="flex items-center space-x-12 footer-info">
+<div class="footer-icon">
+<i class="ri-phone-line text-white text-xl"></i>
+<span class="ml-2 text-white hover:text-gray-200 transition-colors">+86 28 8529 3296</span>
+</div>
+<div class="footer-icon">
+<i class="ri-mail-line text-white text-xl"></i>
+<span class="ml-2 text-white hover:text-gray-200 transition-colors">info@e-sunray.com</span>
+</div>
+</div>
+<div class="text-white copyright">
+<span class="text-sm">© 2025 成都蜀锐科技有限公司 保留所有权利</span>
+</div>
+</div>
+</div>
+</footer>
+<script src="mobile-nav.js"></script>
+</body>
+</html>
