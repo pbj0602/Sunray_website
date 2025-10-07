@@ -11,32 +11,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/" />
   </url>
 
-  <!-- SEL产品页面 -->
+  <!-- SEL产品页面 - 最高优先级 -->
   <url>
     <loc>https://e-sunray.com/产品与解决方案-SEL.html</loc>
     <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-SEL.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/products-sel.html" />
   </url>
 
-  <!-- 日立能源产品页面 -->
+  <!-- 日立能源产品页面 - 第二优先级 -->
   <url>
     <loc>https://e-sunray.com/产品与解决方案-日立.html</loc>
     <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.94</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-日立.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/products-hitachi.html" />
   </url>
 
-  <!-- 开关柜组件页面 -->
+  <!-- 开关柜组件页面 - 第三优先级 -->
   <url>
     <loc>https://e-sunray.com/产品与解决方案-开关柜.html</loc>
     <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.93</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-开关柜.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/products-switchgear.html" />
   </url>
@@ -46,7 +46,7 @@
     <loc>https://e-sunray.com/产品与解决方案-解决方案.html</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-解决方案.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/solutions.html" />
   </url>
@@ -56,7 +56,7 @@
     <loc>https://e-sunray.com/关于我们.html</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/关于我们.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/about.html" />
   </url>
@@ -66,7 +66,7 @@
     <loc>https://e-sunray.com/联系我们.html</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/联系我们.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/contact.html" />
   </url>
@@ -76,7 +76,7 @@
     <loc>https://e-sunray.com/加入我们.html</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/加入我们.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/careers.html" />
   </url>
