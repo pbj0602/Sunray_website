@@ -31,6 +31,7 @@
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preload" as="image" href="banner-sel.jpeg">
 <link href="mobile-fix.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -148,7 +149,7 @@ margin: 0;
 <!-- Banner区域 -->
 <section class="pt-[100px] relative bg-gray-100 mobile-pt">
 <div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6becff66f92ae43a4546f145c3eb287c.jpeg" class="w-full h-full object-cover object-center" alt="SEL产品和解决方案">
+<img src="banner-sel.jpeg" class="w-full h-full object-cover object-center" alt="SEL产品和解决方案" fetchpriority="high">
 <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
 <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 mobile-title" data-i18n="selProducts">SEL产品</h1>
 <p class="text-lg sm:text-xl md:text-2xl max-w-3xl text-wrap mobile-text-adjust" data-i18n="selBanner">我们是SEL官方授权代理，提供优质可靠的微机保护和自动化解决方案</p>
@@ -166,7 +167,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/61bdf79a1ef1308e0a284e6befcdef42.jpeg" class="w-full h-full object-cover object-top" alt="SEL-700BT">
+<img src="61bdf79a1ef1308e0a284e6befcdef42.jpeg" class="w-full h-full object-cover object-top" alt="SEL-700BT" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-700BT</h3>
@@ -176,7 +177,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b80a1404a9df2eb1b389d9f5df2f4c75.jpeg" class="w-full h-full object-cover object-top" alt="SEL-351">
+<img src="b80a1404a9df2eb1b389d9f5df2f4c75.jpeg" class="w-full h-full object-cover object-top" alt="SEL-351" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-351/351A/351S</h3>
@@ -186,7 +187,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3ed7bfbb0276f3892a9746e0ca7875c6.jpeg" class="w-full h-full object-cover object-top" alt="SEL-451">
+<img src="3ed7bfbb0276f3892a9746e0ca7875c6.jpeg" class="w-full h-full object-cover object-top" alt="SEL-451" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-451</h3>
@@ -196,7 +197,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/8ae7e84ead59f1b68cd390430c4c8d95.jpeg" class="w-full h-full object-cover object-top" alt="SEL-501">
+<img src="8ae7e84ead59f1b68cd390430c4c8d95.jpeg" class="w-full h-full object-cover object-top" alt="SEL-501" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-501/501-2</h3>
@@ -206,7 +207,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/dfd68df2232992be94f0daa761c0e0af.jpeg" class="w-full h-full object-cover object-top" alt="SEL-551">
+<img src="dfd68df2232992be94f0daa761c0e0af.jpeg" class="w-full h-full object-cover object-top" alt="SEL-551" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-551/551C</h3>
@@ -216,7 +217,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6f8de5bff463cb597aa03c7c324dfef2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-751">
+<img src="6f8de5bff463cb597aa03c7c324dfef2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-751" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-751/751A</h3>
@@ -226,7 +227,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/4c00f3fdce6cebdcd13d90691df9567c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-851">
+<img src="4c00f3fdce6cebdcd13d90691df9567c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-851" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-851</h3>
@@ -245,7 +246,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6f8de5bff463cb597aa03c7c324dfef2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-751">
+<img src="6f8de5bff463cb597aa03c7c324dfef2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-751" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-751/751A</h3>
@@ -255,7 +256,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/98b3c46218cb8a8a7e62ea516a5abf67.jpeg" class="w-full h-full object-cover object-top" alt="SEL-710-5">
+<img src="98b3c46218cb8a8a7e62ea516a5abf67.jpeg" class="w-full h-full object-cover object-top" alt="SEL-710-5" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-710-5</h3>
@@ -265,7 +266,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f63c20909e94f5244f0eea541a3dd9e8.jpeg" class="w-full h-full object-cover object-top" alt="SEL-849">
+<img src="f63c20909e94f5244f0eea541a3dd9e8.jpeg" class="w-full h-full object-cover object-top" alt="SEL-849" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-849</h3>
@@ -275,7 +276,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/4c00f3fdce6cebdcd13d90691df9567c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-851">
+<img src="4c00f3fdce6cebdcd13d90691df9567c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-851" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-851</h3>
@@ -294,7 +295,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/98b3c46218cb8a8a7e62ea516a5abf67.jpeg" class="w-full h-full object-cover object-top" alt="SEL-710-5">
+<img src="98b3c46218cb8a8a7e62ea516a5abf67.jpeg" class="w-full h-full object-cover object-top" alt="SEL-710-5" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-710-5</h3>
@@ -304,7 +305,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a6c2266ad4465d29509477925fd9b540.jpeg" class="w-full h-full object-cover object-top" alt="SEL-749M">
+<img src="a6c2266ad4465d29509477925fd9b540.jpeg" class="w-full h-full object-cover object-top" alt="SEL-749M" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-749M</h3>
@@ -314,7 +315,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f63c20909e94f5244f0eea541a3dd9e8.jpeg" class="w-full h-full object-cover object-top" alt="SEL-849">
+<img src="f63c20909e94f5244f0eea541a3dd9e8.jpeg" class="w-full h-full object-cover object-top" alt="SEL-849" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-849</h3>
@@ -333,7 +334,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/91e322ca187aeb29879c29b76808bf1e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-300G">
+<img src="91e322ca187aeb29879c29b76808bf1e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-300G" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-300G</h3>
@@ -343,7 +344,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e3373cf8ca5b17075159c11230c8dc78.jpeg" class="w-full h-full object-cover object-top" alt="SEL-400G">
+<img src="e3373cf8ca5b17075159c11230c8dc78.jpeg" class="w-full h-full object-cover object-top" alt="SEL-400G" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-400G</h3>
@@ -353,7 +354,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/222cd74e095eda340d0782dc39c8f5a5.jpeg" class="w-full h-full object-cover object-top" alt="SEL-700G">
+<img src="222cd74e095eda340d0782dc39c8f5a5.jpeg" class="w-full h-full object-cover object-top" alt="SEL-700G" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-700G</h3>
@@ -363,7 +364,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c64b2b0b791b93817ed7f6d800ff4737.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2664">
+<img src="c64b2b0b791b93817ed7f6d800ff4737.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2664" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2664</h3>
@@ -373,7 +374,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/fbed8e91af086cea732ed26a7f38a9d8.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2664S">
+<img src="fbed8e91af086cea732ed26a7f38a9d8.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2664S" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2664S</h3>
@@ -392,7 +393,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f2a4c33f21ba0285ea8ae8f7e27b5ba2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-387">
+<img src="f2a4c33f21ba0285ea8ae8f7e27b5ba2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-387" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-387/387E</h3>
@@ -402,7 +403,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ca01b8f02b41326516881f74045a2538.jpeg" class="w-full h-full object-cover object-top" alt="SEL-487E">
+<img src="ca01b8f02b41326516881f74045a2538.jpeg" class="w-full h-full object-cover object-top" alt="SEL-487E" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-487E</h3>
@@ -412,7 +413,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d567a985165c1af670f97edd4facf136.jpeg" class="w-full h-full object-cover object-top" alt="SEL-587">
+<img src="d567a985165c1af670f97edd4facf136.jpeg" class="w-full h-full object-cover object-top" alt="SEL-587" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-587</h3>
@@ -422,7 +423,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6eb4a007f9106081f455b2a45b346c29.jpeg" class="w-full h-full object-cover object-top" alt="SEL-787">
+<img src="6eb4a007f9106081f455b2a45b346c29.jpeg" class="w-full h-full object-cover object-top" alt="SEL-787" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-787-2/-3/-4</h3>
@@ -432,7 +433,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2db004536bc4c3e86c177bbd9bc5a9ee.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2414">
+<img src="2db004536bc4c3e86c177bbd9bc5a9ee.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2414" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2414</h3>
@@ -451,7 +452,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d3f967f1ace8f85c2e6a6c0892736ba0.jpeg" class="w-full h-full object-cover object-top" alt="SEL-9L">
+<img src="d3f967f1ace8f85c2e6a6c0892736ba0.jpeg" class="w-full h-full object-cover object-top" alt="SEL-9L" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-9L</h3>
@@ -461,7 +462,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/46504d1fd9e5518362d8836324213509.jpeg" class="w-full h-full object-cover object-top" alt="SEL-787L">
+<img src="46504d1fd9e5518362d8836324213509.jpeg" class="w-full h-full object-cover object-top" alt="SEL-787L" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-787L</h3>
@@ -471,7 +472,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/1a77a2108fbbacaa4d38cff0e6567f9e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-311L">
+<img src="1a77a2108fbbacaa4d38cff0e6567f9e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-311L" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-311L</h3>
@@ -481,7 +482,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/305bd17d63e4c27994fd9dd709696b1b.jpeg" class="w-full h-full object-cover object-top" alt="SEL-311C">
+<img src="305bd17d63e4c27994fd9dd709696b1b.jpeg" class="w-full h-full object-cover object-top" alt="SEL-311C" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-311C</h3>
@@ -491,7 +492,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/dec15f8bd94314f8de30a7ca080f5da0.jpeg" class="w-full h-full object-cover object-top" alt="SEL-387L">
+<img src="dec15f8bd94314f8de30a7ca080f5da0.jpeg" class="w-full h-full object-cover object-top" alt="SEL-387L" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-387L</h3>
@@ -501,7 +502,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c647324cc365e5763d7a25a58b782748.jpeg" class="w-full h-full object-cover object-top" alt="SEL-411L">
+<img src="c647324cc365e5763d7a25a58b782748.jpeg" class="w-full h-full object-cover object-top" alt="SEL-411L" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-411L</h3>
@@ -511,7 +512,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/1e3f5aa57d359a224fbdb44e4cadad58.jpeg" class="w-full h-full object-cover object-top" alt="SEL-421">
+<img src="1e3f5aa57d359a224fbdb44e4cadad58.jpeg" class="w-full h-full object-cover object-top" alt="SEL-421" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-421</h3>
@@ -530,7 +531,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/eb32f1408e10c0e7ceecf993b88d0797.jpeg" class="w-full h-full object-cover object-top" alt="SEL-487B">
+<img src="eb32f1408e10c0e7ceecf993b88d0797.jpeg" class="w-full h-full object-cover object-top" alt="SEL-487B" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-487B</h3>
@@ -540,7 +541,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/48deb79c69461440955e3a7c8ef2206c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-787Z">
+<img src="48deb79c69461440955e3a7c8ef2206c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-787Z" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-787Z</h3>
@@ -550,7 +551,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e8004b3544567ba745be8234462d85e6.jpeg" class="w-full h-full object-cover object-top" alt="SEL-587Z">
+<img src="e8004b3544567ba745be8234462d85e6.jpeg" class="w-full h-full object-cover object-top" alt="SEL-587Z" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-587Z</h3>
@@ -569,7 +570,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0c770243d12b88d9cf3c3f5be05d5fec.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2411">
+<img src="0c770243d12b88d9cf3c3f5be05d5fec.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2411" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2411</h3>
@@ -579,7 +580,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2db004536bc4c3e86c177bbd9bc5a9ee.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2414">
+<img src="2db004536bc4c3e86c177bbd9bc5a9ee.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2414" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2414</h3>
@@ -589,7 +590,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5e426bdac76a8d80e11ccac80095c74a.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2440">
+<img src="5e426bdac76a8d80e11ccac80095c74a.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2440" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2440</h3>
@@ -599,7 +600,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/623213a1fdfc97e2271bc1b5d649042b.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2505">
+<img src="623213a1fdfc97e2271bc1b5d649042b.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2505" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2505/2506/2507</h3>
@@ -609,7 +610,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/8294a897c886c43281e7426d42b76ea0.jpeg" class="w-full h-full object-cover object-top" alt="SEL-28XX">
+<img src="8294a897c886c43281e7426d42b76ea0.jpeg" class="w-full h-full object-cover object-top" alt="SEL-28XX" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-28XX</h3>
@@ -628,7 +629,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f29723375504b19eb3c0dbfef58d8191.jpeg" class="w-full h-full object-cover object-top" alt="SEL-735">
+<img src="f29723375504b19eb3c0dbfef58d8191.jpeg" class="w-full h-full object-cover object-top" alt="SEL-735" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-735</h3>
@@ -647,7 +648,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3151c93973e123d32aad6babff752f50.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3505 RTAC">
+<img src="3151c93973e123d32aad6babff752f50.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3505 RTAC" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3505/3505-3 RTAC</h3>
@@ -657,7 +658,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/26819f3c95cd2e91b0ffe3de19d0f671.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3530-4 RTAC">
+<img src="26819f3c95cd2e91b0ffe3de19d0f671.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3530-4 RTAC" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3530-4 RTAC</h3>
@@ -667,7 +668,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3c459740b81a23539d30e0140a85db60.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3350 RTAC">
+<img src="3c459740b81a23539d30e0140a85db60.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3350 RTAC" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3350 RTAC</h3>
@@ -677,7 +678,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c7a7f00c2d85b474f1796ae90ff1704f.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3555 RTAC">
+<img src="c7a7f00c2d85b474f1796ae90ff1704f.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3555 RTAC" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3555 RTAC</h3>
@@ -687,7 +688,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/51491f613de0bd7577f98036255dfe2e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2240 AXION">
+<img src="51491f613de0bd7577f98036255dfe2e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2240 AXION" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2240 AXION</h3>
@@ -706,7 +707,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3c459740b81a23539d30e0140a85db60.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3350">
+<img src="3c459740b81a23539d30e0140a85db60.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3350" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3350</h3>
@@ -716,7 +717,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e4fb4f06a47e17bd82ac22c6db6582b1.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3355">
+<img src="e4fb4f06a47e17bd82ac22c6db6582b1.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3355" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3355</h3>
@@ -726,7 +727,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/fc1363755811dc28857770cbdf36efb6.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3360">
+<img src="fc1363755811dc28857770cbdf36efb6.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3360" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3360</h3>
@@ -745,7 +746,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/9441eeaf3489ac085ca96a13b854c188.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3610">
+<img src="9441eeaf3489ac085ca96a13b854c188.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3610" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3610</h3>
@@ -755,7 +756,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d1f2680207f44141967acb0908bf9bd4.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3620">
+<img src="d1f2680207f44141967acb0908bf9bd4.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3620" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3620</h3>
@@ -765,7 +766,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/05096ec8c8a0ee1d38ee6d92651abe89.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3622">
+<img src="05096ec8c8a0ee1d38ee6d92651abe89.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3622" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3622</h3>
@@ -784,7 +785,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e9cb45fb4eeeee26bee0ca0e999e71e4.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2730M">
+<img src="e9cb45fb4eeeee26bee0ca0e999e71e4.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2730M" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2730M</h3>
@@ -794,7 +795,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c40008856a501cf787e334caa4275cfd.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2725">
+<img src="c40008856a501cf787e334caa4275cfd.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2725" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2725</h3>
@@ -804,7 +805,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/34631b5a1083b51b81395d256cf51382.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2741">
+<img src="34631b5a1083b51b81395d256cf51382.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2741" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2741</h3>
@@ -814,7 +815,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/12a2e700e1e0f895ff9fb7e23a3269a2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2742S">
+<img src="12a2e700e1e0f895ff9fb7e23a3269a2.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2742S" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2742S</h3>
@@ -833,7 +834,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0e97618e31273be5b95d409e7afec964.jpeg" class="w-full h-full object-cover object-top" alt="ICON">
+<img src="0e97618e31273be5b95d409e7afec964.jpeg" class="w-full h-full object-cover object-top" alt="ICON" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">ICON</h3>
@@ -852,7 +853,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c135351e8515a7423f6008dcb5be523d.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2488">
+<img src="c135351e8515a7423f6008dcb5be523d.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2488" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2488</h3>
@@ -862,7 +863,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0d122d3445b023b41a676603a82fc91f.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2407">
+<img src="0d122d3445b023b41a676603a82fc91f.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2407" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2407</h3>
@@ -872,7 +873,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3bec033d6cda92322d0262db7ee9cceb.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2401">
+<img src="3bec033d6cda92322d0262db7ee9cceb.jpeg" class="w-full h-full object-cover object-top" alt="SEL-2401" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-2401</h3>
@@ -882,7 +883,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6c08f8030b0aa808ea47ee76631be61c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3400">
+<img src="6c08f8030b0aa808ea47ee76631be61c.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3400" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3400</h3>
@@ -892,7 +893,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c5dbd421c7696f848c919a73f8eb12b7.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3405">
+<img src="c5dbd421c7696f848c919a73f8eb12b7.jpeg" class="w-full h-full object-cover object-top" alt="SEL-3405" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-3405</h3>
@@ -911,7 +912,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/02c97133c193986e6e60f3c5da2a3462.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5030">
+<img src="02c97133c193986e6e60f3c5da2a3462.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5030" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5030</h3>
@@ -921,7 +922,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e749de1d8d3844e0a399fe4c654d2c38.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5032">
+<img src="e749de1d8d3844e0a399fe4c654d2c38.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5032" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5032</h3>
@@ -931,7 +932,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b30c36371ae07cfb870c7e680abfb4ea.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5033">
+<img src="b30c36371ae07cfb870c7e680abfb4ea.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5033" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5033</h3>
@@ -941,7 +942,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/7a1a6bb2ea3f0cf5042af01ccce44336.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5035">
+<img src="7a1a6bb2ea3f0cf5042af01ccce44336.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5035" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5035</h3>
@@ -951,7 +952,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2e5f318177082a3b78c4c7b01ebd749a.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5037">
+<img src="2e5f318177082a3b78c4c7b01ebd749a.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5037" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5037</h3>
@@ -961,7 +962,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3e06dea85d38753424c2d421807335cd.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5056">
+<img src="3e06dea85d38753424c2d421807335cd.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5056" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5056</h3>
@@ -971,7 +972,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/27092b774bab7f5038d63d5ec9c3054e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5057">
+<img src="27092b774bab7f5038d63d5ec9c3054e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5057" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5057</h3>
@@ -981,7 +982,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a37bc3fe62d8cd45a6b6dddd548e6450.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5045">
+<img src="a37bc3fe62d8cd45a6b6dddd548e6450.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5045" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5045</h3>
@@ -991,7 +992,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6b07375ef69f7e12e81d258610067c03.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5073">
+<img src="6b07375ef69f7e12e81d258610067c03.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5073" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5073</h3>
@@ -1001,7 +1002,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/4c8e1405d923ee88303f6ff77c046c53.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5601">
+<img src="4c8e1405d923ee88303f6ff77c046c53.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5601" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5601</h3>
@@ -1011,7 +1012,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a99515d8d3ce90d06057f298919fd7da.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5702">
+<img src="a99515d8d3ce90d06057f298919fd7da.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5702" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5702</h3>
@@ -1021,7 +1022,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/675b73e421920236cb81f1814903e58b.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5703">
+<img src="675b73e421920236cb81f1814903e58b.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5703" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5703</h3>
@@ -1031,7 +1032,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/92f8587efa65fccf4a8cfcba2ba2fb3e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5705">
+<img src="92f8587efa65fccf4a8cfcba2ba2fb3e.jpeg" class="w-full h-full object-cover object-top" alt="SEL-5705" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">SEL-5705</h3>

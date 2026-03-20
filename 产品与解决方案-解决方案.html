@@ -31,6 +31,7 @@
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preload" as="image" href="banner-solutions.jpeg">
 <link href="mobile-fix.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -137,7 +138,7 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 <!-- Banner区域 -->
 <section class="pt-[100px] relative bg-gray-100 mobile-pt">
 <div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a75655ac550509c2f338d2627c43e4f5.jpeg" class="w-full h-full object-cover object-center" alt="解决方案">
+<img src="banner-solutions.jpeg" class="w-full h-full object-cover object-center" alt="解决方案" fetchpriority="high">
 <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
 <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 mobile-title" data-i18n="solutions">解决方案</h1>
 <p class="text-lg sm:text-xl md:text-2xl max-w-3xl text-wrap mobile-text-adjust" data-i18n="solutionsBanner">我们提供全方位的电力系统自动化解决方案，从组装到验收的一站式服务</p>
@@ -154,9 +155,9 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/195acde6bd6042d5435e294510d72428.jpeg"
+                src="195acde6bd6042d5435e294510d72428.jpeg"
                 class="w-full h-full object-cover"
-                alt="Panel Assembly"
+                alt="Panel Assembly" loading="lazy"
               />
             </div>
             <div class="p-6">
@@ -174,9 +175,9 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/9ac77119fb54f1c98b06c3d7db4f03af.jpeg"
+                src="9ac77119fb54f1c98b06c3d7db4f03af.jpeg"
                 class="w-full h-full object-cover"
-                alt="Commissioning"
+                alt="Commissioning" loading="lazy"
               />
             </div>
             <div class="p-6">
@@ -194,9 +195,9 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/8ff0d487b97a47e3eb6a5304424d999a.jpeg"
+                src="8ff0d487b97a47e3eb6a5304424d999a.jpeg"
                 class="w-full h-full object-cover"
-                alt="Integration"
+                alt="Integration" loading="lazy"
               />
             </div>
             <div class="p-6">
@@ -214,9 +215,9 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/62212c0a03d726086cf9467dedd5d9b3.jpeg"
+                src="62212c0a03d726086cf9467dedd5d9b3.jpeg"
                 class="w-full h-full object-cover"
-                alt="Inspection"
+                alt="Inspection" loading="lazy"
               />
             </div>
             <div class="p-6">
@@ -234,9 +235,9 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/452050426d884ff14e7591ce8a5ef6c6.jpeg"
+                src="452050426d884ff14e7591ce8a5ef6c6.jpeg"
                 class="w-full h-full object-cover"
-                alt="Fault Analysis"
+                alt="Fault Analysis" loading="lazy"
               />
             </div>
             <div class="p-6">
@@ -254,9 +255,9 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5b6c8a541459cd856c8ed2cb14058d1e.jpeg"
+                src="5b6c8a541459cd856c8ed2cb14058d1e.jpeg"
                 class="w-full h-full object-cover"
-                alt="Simulation"
+                alt="Simulation" loading="lazy"
               />
             </div>
             <div class="p-6">

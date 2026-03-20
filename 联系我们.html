@@ -31,6 +31,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preload" as="image" href="banner-contact.jpeg">
 <link href="mobile-fix.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -69,7 +70,7 @@ width: 100%;
 font-weight: 600;
 }
 .map-container {
-background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+background-image: url('map_placeholder_1280x720.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -167,7 +168,7 @@ outline: none;
 <!-- Banner区域 -->
 <section class="pt-[100px] relative bg-gray-100 mobile-pt banner-fix">
 <div class="w-full h-[240px] md:h-[320px] relative overflow-hidden banner-section">
-<img src="https://readdy.ai/api/search-image?query=world%20night%20lights%20map%20from%20space%2C%20city%20lights%20glowing%20across%20continents%2C%20dark%20blue%20earth%20at%20night%20with%20illuminated%20urban%20areas%2C%20satellite%20view%20of%20global%20light%20pollution%2C%20high%20resolution%20NASA-style%20imagery%2C%20dramatic%20and%20professional&width=1600&height=800&seq=1&orientation=landscape" class="w-full h-full object-cover object-center responsive-img" alt="联系我们">
+<img src="banner-contact.jpeg" class="w-full h-full object-cover object-center responsive-img" alt="联系我们" fetchpriority="high">
 <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
 <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 mobile-title" data-i18n="contactUs">联系我们</h1>
 <p class="text-lg sm:text-xl md:text-2xl max-w-3xl text-wrap mobile-text-adjust" data-i18n="contactBanner">我们专业提供电力系统保护与自动化的全方位咨询与技术服务，覆盖项目规划、设计、检测、实施及运维各阶段，全面保障电力系统更安全更可靠、更经济地运行</p>

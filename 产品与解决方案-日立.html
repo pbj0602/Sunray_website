@@ -53,6 +53,7 @@
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preload" as="image" href="banner-hitachi.webp">
 <link href="mobile-fix.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -173,7 +174,7 @@ margin: 0;
 <!-- Banner区域 -->
 <section class="pt-[100px] relative bg-gray-100 mobile-pt">
 <div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/7199eb1ad756602f8daa356538b08df8.webp" class="w-full h-full object-cover object-center" alt="电缆附件产品">
+<img src="banner-hitachi.webp" class="w-full h-full object-cover object-center" alt="电缆附件产品" fetchpriority="high">
 <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
 <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 mobile-title" data-i18n="hitachiProducts">日立能源产品</h1>
 <p class="text-lg sm:text-xl md:text-2xl max-w-3xl text-wrap mobile-text-adjust" data-i18n="hitachiBanner">我们提供高品质的日立能源产品及解决方案</p>
@@ -191,7 +192,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ffb7f70bc60738d3c8c71e88a70f12ba.png" class="w-full h-full object-cover object-center" alt="屏蔽式可分离连接器">
+<img src="ffb7f70bc60738d3c8c71e88a70f12ba.png" class="w-full h-full object-cover object-center" alt="屏蔽式可分离连接器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Shielded Separable connector (With/without lightning arrester)</h3>
@@ -200,7 +201,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a074dee6fd137c63c028b33226bd6b59.png" class="w-full h-full object-cover object-center" alt="冷缩电缆附件">
+<img src="a074dee6fd137c63c028b33226bd6b59.png" class="w-full h-full object-cover object-center" alt="冷缩电缆附件" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Cold shrinkable cable accessories (Terminations, Joints)</h3>
@@ -209,7 +210,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5585466c01f2849b562d1b8457266d2d.png" class="w-full h-full object-cover object-center" alt="内锥插拔式 GIS 终端">
+<img src="5585466c01f2849b562d1b8457266d2d.png" class="w-full h-full object-cover object-center" alt="内锥插拔式 GIS 终端" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Inner cone plug-in GlS termination (2# and 3#)</h3>
@@ -218,7 +219,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ef618732f7fb80fe188797fa1b6e7b82.png" class="w-full h-full object-cover object-center" alt="冷缩接地附件工具包">
+<img src="ef618732f7fb80fe188797fa1b6e7b82.png" class="w-full h-full object-cover object-center" alt="冷缩接地附件工具包" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Premolded joint（145kV）</h3>
@@ -236,7 +237,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a76aa6e8da4b19f7d597fdaa241d4e68.jpeg" class="w-full h-full object-cover object-center" alt="AC交流单相电容器">
+<img src="a76aa6e8da4b19f7d597fdaa241d4e68.jpeg" class="w-full h-full object-cover object-center" alt="AC交流单相电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Single phase capacitors (AC)</h3>
@@ -245,7 +246,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/05dde63a8d46d08eb75b191af22008e2.jpeg" class="w-full h-full object-cover object-center" alt="干DC链路电容器">
+<img src="05dde63a8d46d08eb75b191af22008e2.jpeg" class="w-full h-full object-cover object-center" alt="干DC链路电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">DC link capacitor DryDCap</h3>
@@ -254,7 +255,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/96ebe3277f7ab2234d65e53e31a1ca40.jpeg" class="w-full h-full object-cover object-center" alt="AC交流分相电容器">
+<img src="96ebe3277f7ab2234d65e53e31a1ca40.jpeg" class="w-full h-full object-cover object-center" alt="AC交流分相电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Split-phase capacitors (AC)</h3>
@@ -263,7 +264,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/926871fb5603eddd3050bf1def754882.jpeg" class="w-full h-full object-cover object-center" alt="直流滤波电容器">
+<img src="926871fb5603eddd3050bf1def754882.jpeg" class="w-full h-full object-cover object-center" alt="直流滤波电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">DC filter capacitors</h3>
@@ -272,7 +273,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/690c4e0fdaa27454bffcad7dc75fc330.jpeg" class="w-full h-full object-cover object-center" alt="浪涌电容器">
+<img src="690c4e0fdaa27454bffcad7dc75fc330.jpeg" class="w-full h-full object-cover object-center" alt="浪涌电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Surge capacitors（AC）</h3>
@@ -281,7 +282,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/1b9e63a26fc891f1421ac149609f5dce.jpeg" class="w-full h-full object-cover object-center" alt="三相电容器">
+<img src="1b9e63a26fc891f1421ac149609f5dce.jpeg" class="w-full h-full object-cover object-center" alt="三相电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Three-phase capacitors (AC)</h3>
@@ -290,7 +291,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/9eca4969ecdd549ad7160ca882ab6ae9.jpeg" class="w-full h-full object-cover object-center" alt="金属封闭式电容器组">
+<img src="9eca4969ecdd549ad7160ca882ab6ae9.jpeg" class="w-full h-full object-cover object-center" alt="金属封闭式电容器组" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Metal enclosed capacitor banks ABBACUS</h3>
@@ -299,7 +300,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6f49e2edf9204d553d0ff174716ea932.jpeg" class="w-full h-full object-cover object-center" alt="组架式并联电容器组">
+<img src="6f49e2edf9204d553d0ff174716ea932.jpeg" class="w-full h-full object-cover object-center" alt="组架式并联电容器组" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Open rack shunt banks QBank</h3>
@@ -308,7 +309,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b00ac8c85e6dc3a02a56a87aa3acdf13.jpeg" class="w-full h-full object-cover object-center" alt="Metal enclosed capacitor banks">
+<img src="b00ac8c85e6dc3a02a56a87aa3acdf13.jpeg" class="w-full h-full object-cover object-center" alt="Metal enclosed capacitor banks" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Metal enclosed capacitor banks EMPAC</h3>
@@ -317,7 +318,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/63118317159e8d104d9fa484835d62f0.jpeg" class="w-full h-full object-cover object-center" alt="Metal enclosed capacitor banks">
+<img src="63118317159e8d104d9fa484835d62f0.jpeg" class="w-full h-full object-cover object-center" alt="Metal enclosed capacitor banks" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Metal enclosed capacitor banks SIKAP</h3>
@@ -326,7 +327,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a3eb38076650c8f876204e8d620e13b9.png" class="w-full h-full object-cover object-center" alt="柱上电容器装置">
+<img src="a3eb38076650c8f876204e8d620e13b9.png" class="w-full h-full object-cover object-center" alt="柱上电容器装置" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Pole-mounted capacitor banks QPole</h3>
@@ -335,7 +336,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f11fd9ab36765ffb6dbcfa63ad9f6922.jpeg" class="w-full h-full object-cover object-center" alt="Mobile capacitor bank">
+<img src="f11fd9ab36765ffb6dbcfa63ad9f6922.jpeg" class="w-full h-full object-cover object-center" alt="Mobile capacitor bank" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Mobile capacitor bank</h3>
@@ -344,7 +345,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/e134b8746879e3a759f389b9209865f9.webp" class="w-full h-full object-cover object-center" alt="谐波滤波器">
+<img src="e134b8746879e3a759f389b9209865f9.webp" class="w-full h-full object-cover object-center" alt="谐波滤波器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Harmonic filters CHARM</h3>
@@ -353,7 +354,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b78b0e2231eced558269cba815e7cbf0.jpeg" class="w-full h-full object-cover object-center" alt="低压电容器">
+<img src="b78b0e2231eced558269cba815e7cbf0.jpeg" class="w-full h-full object-cover object-center" alt="低压电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Low-voltage capacitors CLMD</h3>
@@ -362,7 +363,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/4f27f214b6f7407c15fb4d1e7feb9c5a.jpeg" class="w-full h-full object-cover object-center" alt="低压电容器">
+<img src="4f27f214b6f7407c15fb4d1e7feb9c5a.jpeg" class="w-full h-full object-cover object-center" alt="低压电容器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Low-voltage capacitors QCap</h3>
@@ -371,7 +372,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a8a67ab98e57259b9e2e59e4d16d27ce.webp" class="w-full h-full object-cover object-center" alt="功率因数控制器">
+<img src="a8a67ab98e57259b9e2e59e4d16d27ce.webp" class="w-full h-full object-cover object-center" alt="功率因数控制器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Power factor controllers RVC</h3>
@@ -380,7 +381,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a65b4f7f71c7412f0a2271016b26dc65.webp" class="w-full h-full object-cover object-center" alt="功率因数控制器">
+<img src="a65b4f7f71c7412f0a2271016b26dc65.webp" class="w-full h-full object-cover object-center" alt="功率因数控制器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Power factor controller RVT</h3>
@@ -389,7 +390,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b73c7ee076af3f35d62ecccb01ca2724.webp" class="w-full h-full object-cover object-center" alt="低压电容器柜">
+<img src="b73c7ee076af3f35d62ecccb01ca2724.webp" class="w-full h-full object-cover object-center" alt="低压电容器柜" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Low-voltage capacitor banks APCQ</h3>
@@ -398,7 +399,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/1275188486bfe5540a148cfd289e8be6.png" class="w-full h-full object-cover object-center" alt="低压电容器组">
+<img src="1275188486bfe5540a148cfd289e8be6.png" class="w-full h-full object-cover object-center" alt="低压电容器组" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Low-voltage capacitor banks Dynacomp</h3>
@@ -407,7 +408,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c20a08eb93e0e89517eefe8ff2b076e7.webp" class="w-full h-full object-cover object-center" alt="低压有源无功发生器">
+<img src="c20a08eb93e0e89517eefe8ff2b076e7.webp" class="w-full h-full object-cover object-center" alt="低压有源无功发生器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Instantaneous stepless reactive power compensator PQCR</h3>
@@ -425,7 +426,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/bf405ca8c4eab7575afa8720f04a71a7.jpeg" class="w-full h-full object-cover object-center" alt="小型配电变压器">
+<img src="bf405ca8c4eab7575afa8720f04a71a7.jpeg" class="w-full h-full object-cover object-center" alt="小型配电变压器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Distribution transformers</h3>
@@ -434,7 +435,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b3c6b71e18ec920b83426e6f8efcc40a.jpeg" class="w-full h-full object-cover object-center" alt="大型配电变压器">
+<img src="b3c6b71e18ec920b83426e6f8efcc40a.jpeg" class="w-full h-full object-cover object-center" alt="大型配电变压器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Transformers</h3>
@@ -443,7 +444,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/6e8b5e6bed26d119c87b137afebdc89a.jpeg" class="w-full h-full object-cover object-center" alt="组合式箱变">
+<img src="6e8b5e6bed26d119c87b137afebdc89a.jpeg" class="w-full h-full object-cover object-center" alt="组合式箱变" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Pad-mounted transformers</h3>
@@ -452,7 +453,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f67e72e2e9fdc3edc4e5c7602ea2e930.jpeg" class="w-full h-full object-cover object-center" alt="非晶合金配电变压器">
+<img src="f67e72e2e9fdc3edc4e5c7602ea2e930.jpeg" class="w-full h-full object-cover object-center" alt="非晶合金配电变压器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Amorphous metal transformers</h3>
@@ -461,7 +462,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c5071da6d9ef108ddd64101c64638160.jpeg" class="w-full h-full object-cover object-center" alt="调速传动变压器">
+<img src="c5071da6d9ef108ddd64101c64638160.jpeg" class="w-full h-full object-cover object-center" alt="调速传动变压器" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Variable frequency drive transformers</h3>

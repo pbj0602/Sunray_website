@@ -53,6 +53,7 @@
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#003366',secondary:'#0066cc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="preload" as="image" href="banner-switchgear.png">
 <link href="mobile-fix.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -173,7 +174,7 @@ margin: 0;
 <!-- Banner区域 -->
 <section class="pt-[100px] relative bg-gray-100 mobile-pt">
 <div class="w-full h-[240px] md:h-[320px] relative overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ae099702bf7f9c4332e06d22482b104b.png" class="w-full h-full object-cover object-center" alt="电缆附件产品">
+<img src="banner-switchgear.png" class="w-full h-full object-cover object-center" alt="开关柜组件产品" fetchpriority="high">
 <div class="absolute inset-0 bg-primary bg-opacity-60 flex flex-col justify-center items-center text-white text-center px-4">
 <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 mobile-title" data-i18n="switchgearComponents">开关柜组件</h1>
 <p class="text-lg sm:text-xl md:text-2xl max-w-3xl text-wrap mobile-text-adjust" data-i18n="switchgearBanner">我们提供符合美标和欧标的高质量控制柜组件</p>
@@ -191,7 +192,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/b2d25a4e4f01cb0e338fda4f2d83d33e.jpeg" class="w-full h-full object-cover object-center" alt="Auxiliary Relays">
+<img src="b2d25a4e4f01cb0e338fda4f2d83d33e.jpeg" class="w-full h-full object-cover object-center" alt="Auxiliary Relays" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Auxiliary Relays</h3>
@@ -200,7 +201,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/30cbcee2d7d2d8629c8e31cc72ef9056.jpeg" class="w-full h-full object-cover object-center" alt="Trip and Lockout Relays">
+<img src="30cbcee2d7d2d8629c8e31cc72ef9056.jpeg" class="w-full h-full object-cover object-center" alt="Trip and Lockout Relays" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Trip and Lockout Relays</h3>
@@ -209,7 +210,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2cb55e74e1d49b733887efac7175cd93.jpeg" class="w-full h-full object-cover object-center" alt="Supervision Relays">
+<img src="2cb55e74e1d49b733887efac7175cd93.jpeg" class="w-full h-full object-cover object-center" alt="Supervision Relays" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Supervision Relays</h3>
@@ -218,7 +219,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/3442c8661c1ae3a1d2f76bd3dde92a31.jpeg" class="w-full h-full object-cover object-center" alt="Contactor Relays">
+<img src="3442c8661c1ae3a1d2f76bd3dde92a31.jpeg" class="w-full h-full object-cover object-center" alt="Contactor Relays" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Contactor Relays</h3>
@@ -227,7 +228,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/26a056f1ab23ee0cfeafedc7adc62c4c.jpeg" class="w-full h-full object-cover object-center" alt="Relay Sockets">
+<img src="26a056f1ab23ee0cfeafedc7adc62c4c.jpeg" class="w-full h-full object-cover object-center" alt="Relay Sockets" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Relay Sockets and Accessories</h3>
@@ -236,7 +237,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/0353ee246335f0e0bdd9a26ca113b7eb.jpeg" class="w-full h-full object-cover object-top" alt="Trip and Auxiliary Relays">
+<img src="0353ee246335f0e0bdd9a26ca113b7eb.jpeg" class="w-full h-full object-cover object-top" alt="Trip and Auxiliary Relays" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Trip, Supervision and Auxiliary Relays</h3>
@@ -245,7 +246,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/99f0d361e158303afa109b6dfcf7a0d0.jpeg" class="w-full h-full object-cover object-center" alt="GTUS">
+<img src="99f0d361e158303afa109b6dfcf7a0d0.jpeg" class="w-full h-full object-cover object-center" alt="GTUS" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">GTUS</h3>
@@ -263,7 +264,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/2fc104bb3735a83cc4d303a743e2e3da.png" class="w-full h-full object-contain object-center" alt="Auxiliary Switches">
+<img src="2fc104bb3735a83cc4d303a743e2e3da.png" class="w-full h-full object-contain object-center" alt="Auxiliary Switches" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Lock-Out Relay, LOR – Series 26</h3>
@@ -272,7 +273,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ee984d7634a699c9e6922483ce0641d3.png" class="w-full h-full object-contain object-center" alt="Lock-Out Relay Push To Test">
+<img src="ee984d7634a699c9e6922483ce0641d3.png" class="w-full h-full object-contain object-center" alt="Lock-Out Relay Push To Test" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Lock-Out Relay, LOR – Series 26 – Push To Test</h3>
@@ -281,7 +282,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/aed41e29485834d0e5f5badb0980e1a8.png" class="w-full h-full object-contain object-center" alt="Circuit Breaker Control Switch">
+<img src="aed41e29485834d0e5f5badb0980e1a8.png" class="w-full h-full object-contain object-center" alt="Circuit Breaker Control Switch" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Circuit Breaker Control Switch – Series 26</h3>
@@ -290,7 +291,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/111ab344b1ea27c9a3db270d616401d0.png" class="w-full h-full object-contain object-center" alt="Control Switch Relay">
+<img src="111ab344b1ea27c9a3db270d616401d0.png" class="w-full h-full object-contain object-center" alt="Control Switch Relay" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Control Switch Relay (CSR) – Series 26</h3>
@@ -299,7 +300,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f6e7e472eab50c3bc32b535130ce945f.png" class="w-full h-full object-contain object-center" alt="Detented Power Switches">
+<img src="f6e7e472eab50c3bc32b535130ce945f.png" class="w-full h-full object-contain object-center" alt="Detented Power Switches" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Detented Power Switches 30 Amp Series 26</h3>
@@ -308,7 +309,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/f3ab240a01b3f52c1b2d879e2641ae1d.png" class="w-full h-full object-contain object-center" alt="Latching Switch Relay Series 16">
+<img src="f3ab240a01b3f52c1b2d879e2641ae1d.png" class="w-full h-full object-contain object-center" alt="Latching Switch Relay Series 16" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Latching Switch Relay (LSR) – Series 16</h3>
@@ -317,7 +318,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d7fcd2c82624fb09610cd3b3db09e4a9.png" class="w-full h-full object-contain object-center" alt="Latching Switch Relay Series 26">
+<img src="d7fcd2c82624fb09610cd3b3db09e4a9.png" class="w-full h-full object-contain object-center" alt="Latching Switch Relay Series 26" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Latching Switch Relay (LSR) – Series 26</h3>
@@ -326,7 +327,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a79cfee7eb556a36b84ffeca869ed9c2.jpeg" class="w-full h-full object-cover object-center" alt="Series 26 Optional Accessories">
+<img src="a79cfee7eb556a36b84ffeca869ed9c2.jpeg" class="w-full h-full object-cover object-center" alt="Series 26 Optional Accessories" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Series 26 Optional Accessories</h3>
@@ -335,7 +336,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/5817a7820f0a8a45bfc812f34111447c.png" class="w-full h-full object-contain object-center" alt="Series 24">
+<img src="5817a7820f0a8a45bfc812f34111447c.png" class="w-full h-full object-contain object-center" alt="Series 24" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Series 24</h3>
@@ -344,7 +345,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/402db2cbd2422c7d5aa7ff8926cbb097.png" class="w-full h-full object-cover object-center" alt="Type W-2">
+<img src="402db2cbd2422c7d5aa7ff8926cbb097.png" class="w-full h-full object-cover object-center" alt="Type W-2" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Type W-2</h3>
@@ -361,7 +362,7 @@ margin: 0;
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d40e04e15997e80a48aa3597fd61e0d5.jpeg" class="w-full h-full object-cover object-center" alt="TSB 14">
+<img src="d40e04e15997e80a48aa3597fd61e0d5.jpeg" class="w-full h-full object-cover object-center" alt="TSB 14" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Secondary injection test blocks - saTECH TSB 14</h3>
@@ -370,7 +371,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/4594ccd7f4e8879c95fb0563b826c956.jpeg" class="w-full h-full object-cover object-center" alt="TSB 18">
+<img src="4594ccd7f4e8879c95fb0563b826c956.jpeg" class="w-full h-full object-cover object-center" alt="TSB 18" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">Secondary injection test blocks - saTECH TSB 18</h3>
@@ -379,7 +380,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/ae0b4fba013fc21fa20c7d0d579e7f92.png" class="w-full h-full object-cover object-center" alt="FT Test accessories">
+<img src="ae0b4fba013fc21fa20c7d0d579e7f92.png" class="w-full h-full object-cover object-center" alt="FT Test accessories" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">FT Test accessories</h3>
@@ -388,7 +389,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/cd439864fc510a9e7b008cd9e14105b4.png" class="w-full h-full object-cover object-center" alt="FT-1">
+<img src="cd439864fc510a9e7b008cd9e14105b4.png" class="w-full h-full object-cover object-center" alt="FT-1" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">FT-1</h3>
@@ -397,7 +398,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/c6de2ee1cd3fa52fbd3b8ffebc064ded.jpeg" class="w-full h-full object-cover object-center" alt="FMS">
+<img src="c6de2ee1cd3fa52fbd3b8ffebc064ded.jpeg" class="w-full h-full object-cover object-center" alt="FMS" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">FMS</h3>
@@ -406,7 +407,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/a22c4dbd339cda65fe21b86c063d3a52.jpeg" class="w-full h-full object-cover object-center" alt="FMS R19">
+<img src="a22c4dbd339cda65fe21b86c063d3a52.jpeg" class="w-full h-full object-cover object-center" alt="FMS R19" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">FMS R19</h3>
@@ -415,7 +416,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/32cc59c0854decc8bf2b29f236807d8a.png" class="w-full h-full object-contain object-center" alt="MMLB/MMLG">
+<img src="32cc59c0854decc8bf2b29f236807d8a.png" class="w-full h-full object-contain object-center" alt="MMLB/MMLG" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">MMLB / MMLG</h3>
@@ -424,7 +425,7 @@ margin: 0;
 </div>
 <div class="product-card bg-white rounded shadow-sm overflow-hidden">
 <div class="h-48 bg-gray-100 overflow-hidden">
-<img src="https://static.readdy.ai/image/8ccbcb6061761177c36d6f7689048b44/d79ba55193d1b47f29680206b2bfb369.jpeg" class="w-full h-full object-cover object-center" alt="TSB-14">
+<img src="d79ba55193d1b47f29680206b2bfb369.jpeg" class="w-full h-full object-cover object-center" alt="TSB-14" loading="lazy">
 </div>
 <div class="p-4">
 <h3 class="text-lg font-semibold text-primary">TBS-14</h3>
