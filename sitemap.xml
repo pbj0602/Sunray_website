@@ -1,109 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 首页 -->
   <url>
     <loc>https://e-sunray.com/</loc>
-    <lastmod>2025-10-07</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/" />
   </url>
 
   <!-- SEL产品页面 - 最高优先级 -->
   <url>
-    <loc>https://e-sunray.com/产品与解决方案-SEL.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-SEL.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-SEL.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/products-sel.html" />
   </url>
 
   <!-- 日立能源产品页面 - 第二优先级 -->
   <url>
-    <loc>https://e-sunray.com/产品与解决方案-日立.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%97%A5%E7%AB%8B.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.94</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-日立.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/products-hitachi.html" />
   </url>
 
   <!-- 开关柜组件页面 - 第三优先级 -->
   <url>
-    <loc>https://e-sunray.com/产品与解决方案-开关柜.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E5%BC%80%E5%85%B3%E6%9F%9C.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.93</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-开关柜.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/products-switchgear.html" />
   </url>
 
   <!-- 解决方案页面 -->
   <url>
-    <loc>https://e-sunray.com/产品与解决方案-解决方案.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/产品与解决方案-解决方案.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/solutions.html" />
   </url>
 
   <!-- 关于我们 -->
   <url>
-    <loc>https://e-sunray.com/关于我们.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/关于我们.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/about.html" />
   </url>
 
   <!-- 联系我们 -->
   <url>
-    <loc>https://e-sunray.com/联系我们.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/联系我们.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/contact.html" />
   </url>
 
   <!-- 加入我们 -->
   <url>
-    <loc>https://e-sunray.com/加入我们.html</loc>
-    <lastmod>2025-10-07</lastmod>
+    <loc>https://e-sunray.com/%E5%8A%A0%E5%85%A5%E6%88%91%E4%BB%AC.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/加入我们.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/careers.html" />
   </url>
 
   <!-- 职位详情页面 -->
   <url>
-    <loc>https://e-sunray.com/职位详情页面-电气、电仪应用工程师.html</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://e-sunray.com/%E8%81%8C%E4%BD%8D%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-%E7%94%B5%E6%B0%94%E3%80%81%E7%94%B5%E4%BB%AA%E5%BA%94%E7%94%A8%E5%B7%A5%E7%A8%8B%E5%B8%88.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://e-sunray.com/职位详情页面-电气、电仪销售工程师.html</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://e-sunray.com/%E8%81%8C%E4%BD%8D%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-%E7%94%B5%E6%B0%94%E3%80%81%E7%94%B5%E4%BB%AA%E9%94%80%E5%94%AE%E5%B7%A5%E7%A8%8B%E5%B8%88.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://e-sunray.com/职位详情页面-项目经理.html</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://e-sunray.com/%E8%81%8C%E4%BD%8D%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://e-sunray.com/职位详情页面-实习-电气、电仪应用工程师.html</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://e-sunray.com/%E8%81%8C%E4%BD%8D%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-%E5%AE%9E%E4%B9%A0-%E7%94%B5%E6%B0%94%E3%80%81%E7%94%B5%E4%BB%AA%E5%BA%94%E7%94%A8%E5%B7%A5%E7%A8%8B%E5%B8%88.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
-</urlset> 
+</urlset>
