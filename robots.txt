@@ -4,5 +4,50 @@ Allow: /
 # 网站地图
 Sitemap: https://e-sunray.com/sitemap.xml
 
-# 爬取延迟（可选）
-Crawl-delay: 1 
+# 爬取延迟
+Crawl-delay: 1
+
+# ── AI / GEO 爬虫明确授权 ──────────────────────────────────────────
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Google / Gemini（含 AI Overview 训练语料）
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing / Copilot
+User-agent: Bingbot
+Allow: /
+User-agent: msnbot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# ByteDance / 豆包 Doubao
+User-agent: Bytespider
+Allow: /
+
+# Baidu / 文心一言
+User-agent: Baiduspider
+Allow: /
+User-agent: Baiduspider-render
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# 百度验证文件
+Allow: /baidu_verify_codeva-FkJFRAjOlo.html
