@@ -16,6 +16,7 @@ class LanguageManager {
         joinUs: '加入我们',
         
         // 首页内容
+        companyName: '成都蜀锐科技有限公司',
         heroTitle: '赋能电力安全<br class="sm:hidden">智启能源未来',
         heroSubtitle: '我们致力于打造更安全、更智能的电力系统。',
         learnMore: '了解更多',
@@ -349,6 +350,7 @@ class LanguageManager {
         joinUs: 'Join Us',
         
         // 首页内容
+        companyName: 'Chengdu Sunray Technology',
         heroTitle: 'Making Electric Power Safer and Smarter',
         heroSubtitle: ' ',
         learnMore: 'Learn More',
