@@ -3,7 +3,7 @@
   <!-- 首页 -->
   <url>
     <loc>https://e-sunray.com/</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- SEL产品页面 - 最高优先级 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-SEL.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -19,7 +19,7 @@
   <!-- 日立能源产品页面 - 第二优先级 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%97%A5%E7%AB%8B.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.94</priority>
   </url>
@@ -27,7 +27,7 @@
   <!-- 开关柜组件页面 - 第三优先级 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E5%BC%80%E5%85%B3%E6%9F%9C.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.93</priority>
   </url>
@@ -35,7 +35,7 @@
   <!-- 解决方案页面 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

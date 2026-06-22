@@ -248,12 +248,13 @@ class LanguageManager {
         // intelligentEnclosedCompensationSystem: '智能封闭式补偿系统',
 
         // 开关柜组件页面
-        switchgearTitle: '开关柜组件产品 - 成都蜀锐科技有限公司',
-        switchgearDescription: '成都蜀锐科技有限公司专业提供开关柜组件产品，包括辅助继电器、转换开关、测试开关等高质量电力控制设备。',
-        switchgearKeywords: '开关柜组件,辅助继电器,转换开关,测试开关,电力控制,成都蜀锐',
+        switchgearTitle: '开关柜组件与低功率互感器 - 成都蜀锐科技有限公司 | 辅助继电器·测试开关·罗氏线圈',
+        switchgearDescription: '成都蜀锐科技有限公司提供符合美标(ANSI/UL)和欧标(IEC/CE)的开关柜组件与低功率互感器：Arteche saTECH测试插头、States Products FMS测试开关、GE MMLB/MMLG、辅助继电器、跳闸闭锁继电器、转换开关，以及中压室内传感器、罗氏线圈、PLUGSENS插拔式套管电压传感器等。',
+        switchgearKeywords: '开关柜组件,低功率互感器,互感器,电流互感器,电压传感器,罗氏线圈,Rogowski coil,PLUGSENS,套管电压传感器,中压室内传感器,Arteche,saTECH,States Products,FMS,GE MMLB,辅助继电器,跳闸闭锁继电器,转换开关,测试开关,美标,欧标,ANSI,IEC,成都蜀锐',
         auxiliaryRelays: '辅助继电器',
         transferSwitches: '转换开关',
         testSwitches: '测试开关',
+        instrumentTransformers: '低功率互感器',
 
         // 解决方案页面
         solutionsTitle: '解决方案 - 成都蜀锐科技有限公司',
@@ -532,8 +533,10 @@ class LanguageManager {
         // synchrowaveMonitorDesc: 'SynchroWAVe Synchrophasor Monitor Software',
         // synchrowaveReportsDesc: 'SynchroWAVe Reports Software',
 
-        // // 日立能源产品页面
-        // hitachiTitle: 'Hitachi Energy Products - Chengdu Sunray Technology Co., Ltd. | Hitachi Authorized Dealer',
+        // 日立能源产品页面
+        hitachiTitle: 'Hitachi Energy Products - Chengdu Sunray Technology Co., Ltd. | Hitachi Authorized Dealer',
+        hitachiDescription: 'Chengdu Sunray Technology Co., Ltd. is an authorized dealer of Hitachi Energy, professionally providing 1-245kV cable accessories, capacitors, filters, transformers and other high-quality power equipment.',
+        hitachiKeywords: 'Hitachi Energy,cable accessories,capacitors,filters,transformers,Chengdu Sunray,Hitachi authorized dealer',
         cableAccessories245kV: '1-245kV Cable Accessories',
         capacitorsFilters: 'Capacitors and Filters',
         transformers: 'Transformers',
@@ -544,12 +547,13 @@ class LanguageManager {
         solutionsBanner: 'We provide comprehensive power system automation solutions, one-stop service from assembly to acceptance',
 
         // 开关柜组件页面
-        switchgearTitle: 'Power Control Panel Components - Chengdu Sunray Technology Co., Ltd.',
-        switchgearDescription: 'Chengdu Sunray Technology Co., Ltd. professionally provides switchgear component products, including auxiliary relays, transfer switches, test switches and other high-quality power control equipment.',
-        switchgearKeywords: 'switchgear components,auxiliary relays,transfer switches,test switches,power control,Chengdu Sunray',
+        switchgearTitle: 'Switchgear Components & Low Power Instrument Transformers - Chengdu Sunray Technology | Relays, Test Switches & Rogowski Coils',
+        switchgearDescription: 'Chengdu Sunray Technology provides ANSI/UL and IEC/CE switchgear components and low power instrument transformers: Arteche saTECH test blocks, States Products FMS test switches, GE MMLB/MMLG, auxiliary relays, trip & lockout relays, transfer switches, plus medium voltage indoor sensors, Rogowski coils and PLUGSENS plug-in bushing voltage sensors.',
+        switchgearKeywords: 'switchgear components,low power instrument transformers,instrument transformers,current sensors,voltage sensors,Rogowski coil,PLUGSENS,medium voltage indoor sensors,Arteche,saTECH,States Products,FMS,GE MMLB,auxiliary relays,trip lockout relays,transfer switches,test switches,ANSI,IEC,UL,CE,Chengdu Sunray',
         auxiliaryRelays: 'Auxiliary Relays',
         transferSwitches: 'Transfer Switches',
         testSwitches: 'Test Switches',
+        instrumentTransformers: 'Low Power Instrument Transformers',
 
         // 解决方案页面
         solutionsTitle: 'Solutions - Chengdu Sunray Technology Co., Ltd.',
@@ -666,42 +670,60 @@ class LanguageManager {
 
   updateMetaTags() {
     const translations = this.translations[this.currentLanguage];
-    
+
+    // 按当前页面选择对应的SEO元信息（找不到对应键时回退到全站默认）
+    const pageMetaMap = {
+      'index.html': ['metaTitle', 'metaDescription', 'metaKeywords'],
+      '关于我们.html': ['aboutTitle', 'aboutDescription', 'aboutKeywords'],
+      '联系我们.html': ['contactTitle', 'contactDescription', 'contactKeywords'],
+      '加入我们.html': ['joinTitle', 'joinDescription', 'joinKeywords'],
+      '产品与解决方案-SEL.html': ['selTitle', 'selDescription', 'selKeywords'],
+      '产品与解决方案-日立.html': ['hitachiTitle', 'hitachiDescription', 'hitachiKeywords'],
+      '产品与解决方案-开关柜.html': ['switchgearTitle', 'switchgearDescription', 'switchgearKeywords'],
+      '产品与解决方案-解决方案.html': ['solutionsTitle', 'solutionsDescription', 'solutionsKeywords']
+    };
+    let page = decodeURIComponent((location.pathname.split('/').pop() || 'index.html'));
+    if (page === '') page = 'index.html';
+    const keys = pageMetaMap[page] || ['metaTitle', 'metaDescription', 'metaKeywords'];
+    const pageTitle = translations[keys[0]] || translations.metaTitle;
+    const pageDescription = translations[keys[1]] || translations.metaDescription;
+    const pageKeywords = translations[keys[2]] || translations.metaKeywords;
+
     // 更新title
-    document.title = translations.metaTitle;
-    
+    document.title = pageTitle;
+
     // 更新meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.content = translations.metaDescription;
+      metaDescription.content = pageDescription;
     }
-    
+
     // 更新meta keywords
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
-      metaKeywords.content = translations.metaKeywords;
+      metaKeywords.content = pageKeywords;
     }
-    
+
     // 更新OpenGraph标签
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
-      ogTitle.content = translations.metaTitle;
+      ogTitle.content = pageTitle;
     }
-    
+
     const ogDescription = document.querySelector('meta[property="og:description"]');
     if (ogDescription) {
-      ogDescription.content = translations.metaDescription;
+      ogDescription.content = pageDescription;
     }
-    
+
     // 更新Twitter标签
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
     if (twitterTitle) {
-      twitterTitle.content = translations.metaTitle;
+      twitterTitle.content = pageTitle;
     }
-    
+
     const twitterDescription = document.querySelector('meta[name="twitter:description"]');
     if (twitterDescription) {
-      twitterDescription.content = translations.metaDescription;
+      twitterDescription.content = pageDescription;
     }
   }
 
