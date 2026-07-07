@@ -1,7 +1,7 @@
 // 语言管理系统
 class LanguageManager {
   constructor() {
-    this.currentLanguage = localStorage.getItem('language') || 'zh';
+    this.currentLanguage = 'zh';
     this.translations = {
       zh: {
         // 导航栏
@@ -727,6 +727,27 @@ class LanguageManager {
     }
   }
 
+  getEnglishUrl() {
+    const zhToEn = {
+      'index.html': 'en/index.html',
+      '产品与解决方案-SEL.html': 'en/sel-products.html',
+      '产品与解决方案-日立.html': 'en/hitachi-energy-products.html',
+      '产品与解决方案-开关柜.html': 'en/power-control-panel-components.html',
+      '产品与解决方案-解决方案.html': 'en/solutions.html',
+      '关于我们.html': 'en/about.html',
+      '联系我们.html': 'en/contact.html',
+      '加入我们.html': 'en/careers.html',
+      'faq-preview.html': 'en/index.html',
+      '职位详情页面-电气、电仪应用工程师.html': 'en/careers.html',
+      '职位详情页面-电气、电仪销售工程师.html': 'en/careers.html',
+      '职位详情页面-实习-电气、电仪应用工程师.html': 'en/careers.html',
+      '职位详情页面-项目经理.html': 'en/careers.html'
+    };
+    let page = decodeURIComponent(location.pathname.split('/').pop() || 'index.html');
+    if (page === '') page = 'index.html';
+    return zhToEn[page] || 'en/index.html';
+  }
+
   addLanguageToggle() {
     // 查找桌面导航栏
     const desktopNav = document.querySelector('nav.hidden.md\\:flex');
@@ -752,23 +773,14 @@ class LanguageManager {
       languageDropdown.id = 'languageDropdown';
       languageDropdown.className = 'absolute hidden w-32 bg-white rounded-lg shadow-lg py-2 mt-2 right-0';
       languageDropdown.innerHTML = `
-        <button class="block w-full px-4 py-2 text-gray-800 hover:text-primary text-left relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base" data-lang="zh">
+        <span class="block w-full px-4 py-2 text-primary text-left text-base">
           中文
-        </button>
-        <button class="block w-full px-4 py-2 text-gray-800 hover:text-primary text-left relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base" data-lang="en">
+        </span>
+        <a href="${this.getEnglishUrl()}" class="block w-full px-4 py-2 text-gray-800 hover:text-primary text-left relative after:absolute after:bottom-1 after:left-4 after:right-4 after:h-0.5 after:bg-primary after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 text-base">
           English
-        </button>
+        </a>
       `;
-      
-      // 添加点击事件到语言选项
-      languageDropdown.addEventListener('click', (e) => {
-        if (e.target.hasAttribute('data-lang')) {
-          const selectedLang = e.target.getAttribute('data-lang');
-          this.setLanguage(selectedLang);
-          languageDropdown.classList.add('hidden');
-        }
-      });
-      
+
       // 组装下拉菜单
       languageDropdownContainer.appendChild(languageBtn);
       languageDropdownContainer.appendChild(languageDropdown);
@@ -786,26 +798,11 @@ class LanguageManager {
       mobileLanguageSection.innerHTML = `
         <p class="text-white text-xl font-medium border-b border-gray-700 pb-3">语言 / Language</p>
         <div class="pl-4 pt-2 pb-2">
-          <button class="block text-white text-lg py-2 touch-target" data-lang="zh">中文</button>
-          <button class="block text-white text-lg py-2 touch-target" data-lang="en">English</button>
+          <span class="block text-white text-lg py-2 touch-target font-semibold">中文</span>
+          <a href="${this.getEnglishUrl()}" class="block text-white text-lg py-2 touch-target">English</a>
         </div>
       `;
-      
-      // 添加点击事件到移动端语言选项
-      mobileLanguageSection.addEventListener('click', (e) => {
-        if (e.target.hasAttribute('data-lang')) {
-          const selectedLang = e.target.getAttribute('data-lang');
-          this.setLanguage(selectedLang);
-          // 关闭移动菜单
-          const mobileMenuEl = document.getElementById('mobileMenu');
-          const mobileMenuButton = document.getElementById('mobileMenuButton');
-          if (mobileMenuEl && mobileMenuButton) {
-            mobileMenuEl.classList.add('hidden');
-            mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x"></i>';
-          }
-        }
-      });
-      
+
       // 添加到移动菜单末尾
       mobileMenu.appendChild(mobileLanguageSection);
     }
