@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- 首页 -->
   <url>
     <loc>https://e-sunray.com/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/index.html"/>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,6 +15,9 @@
   <!-- SEL产品页面 - 最高优先级 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-SEL.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-SEL.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/sel-products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/sel-products.html"/>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -19,6 +26,9 @@
   <!-- 日立能源产品页面 - 第二优先级 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%97%A5%E7%AB%8B.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%97%A5%E7%AB%8B.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/hitachi-energy-products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/hitachi-energy-products.html"/>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.94</priority>
@@ -27,6 +37,9 @@
   <!-- 开关柜组件页面 - 第三优先级 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E5%BC%80%E5%85%B3%E6%9F%9C.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E5%BC%80%E5%85%B3%E6%9F%9C.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/switchgear-components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/switchgear-components.html"/>
     <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.93</priority>
@@ -35,6 +48,9 @@
   <!-- 解决方案页面 -->
   <url>
     <loc>https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/solutions.html"/>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -43,6 +59,9 @@
   <!-- 关于我们 -->
   <url>
     <loc>https://e-sunray.com/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/about.html"/>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -51,6 +70,9 @@
   <!-- 联系我们 -->
   <url>
     <loc>https://e-sunray.com/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/contact.html"/>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -59,6 +81,9 @@
   <!-- 加入我们 -->
   <url>
     <loc>https://e-sunray.com/%E5%8A%A0%E5%85%A5%E6%88%91%E4%BB%AC.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E5%8A%A0%E5%85%A5%E6%88%91%E4%BB%AC.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/careers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/careers.html"/>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -75,48 +100,72 @@
   <!-- 英文版页面 English pages -->
   <url>
     <loc>https://e-sunray.com/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/index.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/sel-products.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-SEL.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/sel-products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/sel-products.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/hitachi-energy-products.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%97%A5%E7%AB%8B.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/hitachi-energy-products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/hitachi-energy-products.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/switchgear-components.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E5%BC%80%E5%85%B3%E6%9F%9C.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/switchgear-components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/switchgear-components.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.83</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/solutions.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/about.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/contact.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://e-sunray.com/en/careers.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://e-sunray.com/%E5%8A%A0%E5%85%A5%E6%88%91%E4%BB%AC.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://e-sunray.com/en/careers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://e-sunray.com/en/careers.html"/>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
